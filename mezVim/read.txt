@@ -1,0 +1,17 @@
+structuredAttrs is enabled
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: configurePhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+no configure script, doing nothing
+Running phase: buildPhase
+@nix { "action": "setPhase", "phase": "buildPhase" }
+no Makefile or custom buildPhase, doing nothing
+Generating remote plugin manifest
+Looking for lua dependencies...
+_addToLuaPath called for dir /nix/store/qw1vq2rbq0qrcsdnm3w7rg4bkf7xq23l-vim-pack-dir
+propagated dependency path for plugins: ;;
+propagated dependency cpath for plugins: ;;
+/nix/store/9cdcy8k4zp8zm03kpqf49xghfk1c451l-make-shell-wrapper-hook/nix-support/setup-hook: line 116: /nix/store/pkgbr7l8lymakwbbwxnirzpxl3g86iwq-neovim-0.10.3/bin/mezVim: Too many levels of symbolic links
