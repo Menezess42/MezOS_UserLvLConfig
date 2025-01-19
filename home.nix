@@ -10,6 +10,7 @@
   zsh.enable=true;
   home.packages = with pkgs; [
   # neovim
+  wl-clipboard
     lua-language-server
     eza
     bat
