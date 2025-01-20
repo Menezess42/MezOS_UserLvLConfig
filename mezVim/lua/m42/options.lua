@@ -45,3 +45,19 @@ vim.opt.scrolloff = 27
 -- Enable mouse mode
 vim.o.mouse='a'
 
+vim.api.nvim_create_autocmd("fileType", {
+    desc = "remove formatoptions",
+    callback = fucntion()
+    vim.opt.formatoptions:remove({"c", "r", "o"})
+end,
+})
+
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', {clear = true})
+vim.api.nvim_create_autocmd('TextYankPost', {
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+    group = highlight_group,
+    pattern = '*',
+})
+

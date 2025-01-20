@@ -1,11 +1,10 @@
 {
-	description = "A Lua-natic's neovim flake, with extra cats! nixCats!";
+	description = "MezVim, my neovim configuration helped by the big brain of nixCats";
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 		nixCats.url = "github:BirdeeHub/nixCats-nvim";
 	};
-
 	outputs = { self, nixpkgs,  ... }@inputs: let
 		inherit (inputs.nixCats) utils;
 	luaPath = "${./.}";
@@ -20,9 +19,9 @@
 	categoryDefinitions = { pkgs, settings, categories, extra, name, mkNvimPlugin, ... }@packageDef: {
 		lspsAndRuntimeDeps = {
 			general = with pkgs; [
-				universal-ctags
-					ripgrep
-					fd
+                universal-ctags
+                    ripgrep
+                    fd
 			];
 			neonixdev = {
 				inherit (pkgs) nix-doc lua-language-server nixd;
@@ -32,15 +31,74 @@
 			debug=with pkgs.vimPlugins;[nvim-nio];
 			gitPlugins = with pkgs.neovimPlugins; [ ];
 			general = with pkgs.vimPlugins; {
-				always = [ no-neck-pain-nvim nvim-highlight-colors];
+                always = [ 
+                no-neck-pain-nvim
+                nvim-highlight-colors 
+                lze 
+                ];
+                extra = [
+                oil-nvim
+                nvim-web-devicons
+                ];
 				};
 		};
-		optionalPlugins = {
-			gitPlugins = with pkgs.neovimPlugins; [ ];
-			general = with pkgs.vimPlugins; [ 
-				no-neck-pain-nvim 
-				nvim-highlight-colors
-			];
+        optionalPlugins = {
+            debug = with pkgs.vimPlugins; {
+                default = [
+                    nvim-dap
+                        nvim-dap-ui
+                        nvim-dap-virtual-text
+                ];
+            };
+            lint = with pkgs.vimPlugins; [
+                conform-nvim
+            ];
+            format = with pkgs.vimPlugins; [
+                conform-nvim
+            ];
+            markdown = with pkgs.vimPlugins; [
+                markdown-preview-nvim
+            ];
+            neonixdev = with pkgs.vimPlugins; [
+                lazydev-nvim
+            ];
+            general = {
+                cmp = with pkgs.vimPlugins; [
+                nvim-cmp
+                luasnip
+                friendly-snippets
+                cmp_luasnip
+                cmp-buffer
+                cmp-path
+                cmp-nvim-lua
+                cmp-nvim-lsp
+                cmp-cmdline
+                cmp-nvim-lsp-signature-help
+                cmp-cmdline-history
+                lspkind-nvim
+                ];
+                treesitter = with pkgs.vimPlugins; [
+                nvim-treesitter-textobjects
+                nvim-treesitter.withAllGrammars
+                ];
+                telescope = with pkgs.vimPlugins; [
+                telescope-fzf-native-nvim
+                telescope-ui-select-nvim
+                telescope-nvim
+                ];
+                always = with pkgs.vimPlugins; [
+                nvim-lspconfig
+                lualine-nvim
+                gitsigns-nvim
+                vim-sleuth
+                vim-fugitive
+                vim-rhubarb
+                nvim-surround
+                no-neck-pain-nvim
+                nvim-highlight-colors
+                ];
+            };
+			# gitPlugins = with pkgs.neovimPlugins; [ ];
 		};
 		sharedLibraries = {
 			general = with pkgs; [
