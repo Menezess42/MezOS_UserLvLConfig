@@ -4,7 +4,6 @@
 		home-manager.url = "github:nix-community/home-manager";
 		stylix.url = "github:danth/stylix";
 		nixCats.url = "./nixCats/"; # Flake local
-		# mezVim.url = "./mezVim/";
 		MezVim.url = "./MezVim/";
 	};
 
@@ -14,7 +13,6 @@
 			modules = [
 				stylix.homeManagerModules.stylix
 					nixCats.homeModule
-					# mezVim.homeModule
 					MezVim.homeModule
 					./home.nix
 			];

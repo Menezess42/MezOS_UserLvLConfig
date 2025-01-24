@@ -1,6 +1,5 @@
 require('m42.options')
 require('m42.remap')
-
 require("lze").register_handlers(require('lze.x'))
 require("lze").register_handlers(require('nixCatsUtils.lzUtils').for_cat)
 
@@ -15,4 +14,4 @@ require("lze").register_handlers(require('nixCatsUtils.lzUtils').for_cat)
 --     require('m42.format')
 -- end
 --
--- require('m42.LSPs')
+require('m42.LSPs')
