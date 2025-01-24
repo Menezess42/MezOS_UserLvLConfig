@@ -96,7 +96,7 @@ end
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('nixCats-lsp-attach', { clear = true }),
   callback = function(event)
-    require('myLuaConf.LSPs.caps-on_attach').on_attach(vim.lsp.get_client_by_id(event.data.client_id), event.buf)
+    require('m42.LSPs.caps-on_attach').on_attach(vim.lsp.get_client_by_id(event.data.client_id), event.buf)
   end
 })
 
@@ -114,9 +114,9 @@ require('lze').load {
       if require('nixCatsUtils').isNixCats then
         for server_name, cfg in pairs(servers) do
           require('lspconfig')[server_name].setup({
-            capabilities = require('myLuaConf.LSPs.caps-on_attach').get_capabilities(server_name),
+            capabilities = require('m42.LSPs.caps-on_attach').get_capabilities(server_name),
             -- this line is interchangeable with the above LspAttach autocommand
-            -- on_attach = require('myLuaConf.LSPs.caps-on_attach').on_attach,
+            -- on_attach = require('m42.LSPs.caps-on_attach').on_attach,
             settings = cfg,
             filetypes = (cfg or {}).filetypes,
             cmd = (cfg or {}).cmd,
@@ -132,9 +132,9 @@ require('lze').load {
         mason_lspconfig.setup_handlers {
           function(server_name)
             require('lspconfig')[server_name].setup {
-              capabilities = require('myLuaConf.LSPs.caps-on_attach').get_capabilities(server_name),
+              capabilities = require('m42.LSPs.caps-on_attach').get_capabilities(server_name),
               -- this line is interchangeable with the above LspAttach autocommand
-              -- on_attach = require('myLuaConf.LSPs.caps-on_attach').on_attach,
+              -- on_attach = require('m42.LSPs.caps-on_attach').on_attach,
               settings = servers[server_name],
               filetypes = (servers[server_name] or {}).filetypes,
             }

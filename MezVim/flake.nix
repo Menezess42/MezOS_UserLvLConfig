@@ -17,17 +17,36 @@
       (utils.standardPluginOverlay inputs)
     ];
     categoryDefinitions = { pkgs, settings, categories, extra, name, mkNvimPlugin, ... }@packageDef: {
-      lspsAndRuntimeDeps = {
-        general = with pkgs; [
-	universal-ctags
-	ripgrep
-	fd
-        ];
-	format = with pkgs; [];
-	neonixdev = {
-	inherit (pkgs) nix-doc lua-language-server nixd;
-	};
-      };
+        lspsAndRuntimeDeps = {
+# some categories of stuff.
+            general = with pkgs; [
+                universal-ctags
+                    ripgrep
+                    fd
+            ];
+# these names are arbitrary.
+            lint = with pkgs; [
+            ];
+# but you can choose which ones you want
+# per nvim package you export
+            debug = with pkgs; {
+                go = [ delve ];
+            };
+            go = with pkgs; [
+                gopls
+                    gotools
+                    go-tools
+                    gccgo
+            ];
+# and easily check if they are included in lua
+            format = with pkgs; [
+            ];
+            neonixdev = {
+# also you can do this.
+                inherit (pkgs) nix-doc lua-language-server nixd;
+# and each will be its own sub category
+            };
+        };
       startupPlugins = {
 	      debug = with pkgs.vimPlugins; [
 		      nvim-nio
@@ -145,6 +164,9 @@
 			    lint = true;
 			    format = true;
 			    neonixdev = true;
+                test = {
+                subtest1 = true;
+                };
 		    };
 	    };
     };
