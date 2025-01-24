@@ -1,0 +1,47 @@
+[?1049h[?1h[H[2J[?2004h[?2026$p[?u[c[?12h[?25h[?25l(B[m[H[2J[23B[38:2:255:192:185m[48:2:10:80:110mErro detectado ao processar /nix/store/jn908aznvv48m3bgmza4ic7akskcpgwq-init.lua[H(B[m[38:2:229:220:203m[48:2:10:80:110m[23M
+(B[m[38:2:255:192:185m[48:2:10:80:110m:(B[m[38:2:229:220:203m[48:2:10:80:110m                                                                               
+(B[m[38:2:255:192:185m[48:2:10:80:110mE5113: Error while calling lua chunk: vim/_editor.lua:0: /nix/store/jn908aznvv48
+m3bgmza4ic7akskcpgwq-init.lua..nvim_exec2() called at /nix/store/jn908aznvv48m3b
+gmza4ic7akskcpgwq-init.lua:0../nix/store/laa0n6rk5hsqjr9wql2pz9bvldvaj7db-vimplu
+gin-cmp-buffer-2022-08-10/after/plugin/cmp_buffer.lua: Vim(source):E5113: Error 
+while calling lua chunk: ...plugin-cmp-buffer-2022-08-10/after/plugin/cmp_buffer
+.lua:1: module 'cmp' not found:(B[m[38:2:229:220:203m[48:2:10:80:110m                                                 
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no field package.preload['cmp'](B[m[38:2:229:220:203m[48:2:10:80:110m                                         
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/hzxf267vbskrpdr8xnjqkxav6qdvqab5-lua5.1-jsregexp-0.0
+.7-1/share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                     
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/x9qbxvwklbrjlhsyplwb1p8vv0306a53-lua5.1-plenary.nvim
+-scm-1/share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                   
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/x9qbxvwklbrjlhsyplwb1p8vv0306a53-lua5.1-plenary.nvim
+-scm-1/share/lua/5.1/cmp/init.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                              
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/fr6nanagi8yviw3z7w47hnw9llgji2xl-lua5.1-luassert-1.9
+.0-1/share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                     
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/fr6nanagi8yviw3z7w47hnw9llgji2xl-lua5.1-luassert-1.9
+.0-1/share/lua/5.1/cmp/init.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/szirxzd02b089mik62glnnvnyfghycf8-lua5.1-say-1.4.1-3/
+share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                          
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/szirxzd02b089mik62glnnvnyfghycf8-lua5.1-say-1.4.1-3/
+share/lua/5.1/cmp/init.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                     
+(B[m[38:2:140:248:247m[48:2:10:80:110m-- Mais --(B[m[38:2:229:220:203m[48:2:10:80:110m                                                                      ]112[1 q[H(B[m[38:2:255:192:185m[48:2:10:80:110mErro detectado ao processar /nix/store/jn908aznvv48m3bgmza4ic7akskcpgwq-init.lua
+:(B[m[38:2:229:220:203m[48:2:10:80:110m                                                                               
+(B[m[38:2:255:192:185m[48:2:10:80:110mE5113: Error while calling lua chunk: vim/_editor.lua:0: /nix/store/jn908aznvv48
+m3bgmza4ic7akskcpgwq-init.lua..nvim_exec2() called at /nix/store/jn908aznvv48m3b
+gmza4ic7akskcpgwq-init.lua:0../nix/store/laa0n6rk5hsqjr9wql2pz9bvldvaj7db-vimplu
+gin-cmp-buffer-2022-08-10/after/plugin/cmp_buffer.lua: Vim(source):E5113: Error 
+while calling lua chunk: ...plugin-cmp-buffer-2022-08-10/after/plugin/cmp_buffer
+.lua:1: module 'cmp' not found:(B[m[38:2:229:220:203m[48:2:10:80:110m                                                 
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no field package.preload['cmp'](B[m[38:2:229:220:203m[48:2:10:80:110m                                         
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/hzxf267vbskrpdr8xnjqkxav6qdvqab5-lua5.1-jsregexp-0.0
+.7-1/share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                     
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/x9qbxvwklbrjlhsyplwb1p8vv0306a53-lua5.1-plenary.nvim
+-scm-1/share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                   
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/x9qbxvwklbrjlhsyplwb1p8vv0306a53-lua5.1-plenary.nvim
+-scm-1/share/lua/5.1/cmp/init.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                              
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/fr6nanagi8yviw3z7w47hnw9llgji2xl-lua5.1-luassert-1.9
+.0-1/share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                     
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/fr6nanagi8yviw3z7w47hnw9llgji2xl-lua5.1-luassert-1.9
+.0-1/share/lua/5.1/cmp/init.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/szirxzd02b089mik62glnnvnyfghycf8-lua5.1-say-1.4.1-3/
+share/lua/5.1/cmp.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                          
+(B[m[38:2:255:192:185m[48:2:10:80:110m        no file '/nix/store/szirxzd02b089mik62glnnvnyfghycf8-lua5.1-say-1.4.1-3/
+share/lua/5.1/cmp/init.lua'(B[m[38:2:229:220:203m[48:2:10:80:110m                                                     
+(B[m[38:2:140:248:247m[48:2:10:80:110m-- Mais --(B[m[38:2:229:220:203m[48:2:10:80:110m                                                                      [24;11H[?12h[?25h[?25l[?1004h[?12h[?25h
