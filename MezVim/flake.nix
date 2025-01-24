@@ -170,9 +170,11 @@
 
 				lspDebugMode=false;
 			};
-			nixdExtras = {
-			nixpkgs = nixpkgs;
-			};
+            extra = {
+            nixdExtras = {
+            nixpkgs = nixpkgs;
+            };
+            };
 	    };
     };
     defaultPackageName = "MezVim";
