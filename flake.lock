@@ -7,12 +7,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-GOVniir7KFj0Luzux9QjdB772k5vfRrgFYu3Lh0d73w=",
-        "path": "/nix/store/lyjrk4khjlc144cs7gdh97qj81n2872y-source/MezVim",
+        "narHash": "sha256-8chH5YiKo3hfh0dkxmMmY1jPluKyHB6wq2Va2RCbg+o=",
+        "path": "/nix/store/kcgwb5d2h9684d97hx2qzjl0p6qvzik5-source/MezVim",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/lyjrk4khjlc144cs7gdh97qj81n2872y-source/MezVim",
+        "path": "/nix/store/kcgwb5d2h9684d97hx2qzjl0p6qvzik5-source/MezVim",
         "type": "path"
       }
     },
@@ -278,11 +278,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-I5ELU2lz80TAW5X5RjOWQ0PhMz0wnQjNfLa9GOVxzek=",
-        "path": "/nix/store/lyjrk4khjlc144cs7gdh97qj81n2872y-source/nixCats",
+        "path": "/nix/store/kcgwb5d2h9684d97hx2qzjl0p6qvzik5-source/nixCats",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/lyjrk4khjlc144cs7gdh97qj81n2872y-source/nixCats",
+        "path": "/nix/store/kcgwb5d2h9684d97hx2qzjl0p6qvzik5-source/nixCats",
         "type": "path"
       }
     },
