@@ -6,7 +6,6 @@ return {
         event = "DeferredUIEnter",
         -- ft = "",
         -- keys = "",
-        colorscheme = "auto",
         after = function (plugin)
             require('which-key').setup({
             })

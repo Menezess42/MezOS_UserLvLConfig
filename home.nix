@@ -67,10 +67,6 @@
     };
     autoEnable = true;
   };
-  nixCats = {
-  enable = true;
-  packageNames = ["nixCats" ];
-  };
   MezVim = {
   enable = true;
   packageNames = ["MezVim"];
