@@ -13,4 +13,7 @@ require('lze').load{
     {import = "m42.plugins.undotree"},
     {import = "m42.plugins.comment"},
     {import = "m42.plugins.indentblankline"},
+    {import = "m42.plugins.vimSurround"},
+    {import = "m42.plugins.fidget"},
+    {import = "m42.plugins.lualine"},
 }
