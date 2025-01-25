@@ -45,18 +45,16 @@ local colors = {
 
 
 
--- Define highlights
 local highlight_groups = {
-Normal = { fg = colors.base05, bg = colors.base00 }, 
-Comment = { fg = colors.base03, bg = "NONE", italic = true },
-  Constant = { fg = colors.base0C },
-  String = { fg = colors.base0B },
-  Function = { fg = colors.base09 },
-  Keyword = { fg = colors.base08, bold = true },
-  Type = { fg = colors.base0A },
-  Variable = { fg = colors.base0D },
-  Error = { fg = colors.base08, bg = colors.base00, bold = true },
-  Debug = { fg = colors.base0F },
+  Normal = { fg = colors.base05, bg = colors.base00 },
+  NormalFloat = { fg = colors.base05, bg = colors.base00 }, -- Fundo das janelas flutuantes
+  FloatBorder = { fg = colors.base0C, bg = colors.base00 }, -- Bordas
+  WhichKey = { fg = colors.base06, bg = colors.base00 }, -- Texto principal
+  WhichKeyGroup = { fg = colors.base0B }, -- Grupos como "[c]ode"
+  WhichKeySeparator = { fg = colors.base03 }, -- Separadores
+  WhichKeyDesc = { fg = colors.base08 }, -- Descrições dos atalhos
+  WhichKeyFloat = { bg = colors.base00 }, -- Fundo flutuante
+  WhichKeyBorder = { fg = colors.base04 }, -- Bordas
 }
 
 for group, settings in pairs(highlight_groups) do
@@ -67,4 +65,3 @@ for group, settings in pairs(highlight_groups) do
   if settings.italic then command = command .. " gui=italic" end
   vim.cmd(command)
 end
-

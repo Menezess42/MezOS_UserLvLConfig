@@ -7,12 +7,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-IHBfnML8aoRKODicJV5GUfBYhKj74/SUCRjqNdk2qRw=",
-        "path": "/nix/store/wj93q64wm7f1bvn6bakj4yp0gldsnyz2-source/MezVim",
+        "narHash": "sha256-5uHvQJHg5gMBsGF2eOiBn9KzK4p1WJT7C/cVKiSE6oM=",
+        "path": "/nix/store/yc4n0dljm8s9wajylq79cv525xfi4v8n-source/MezVim",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/wj93q64wm7f1bvn6bakj4yp0gldsnyz2-source/MezVim",
+        "path": "/nix/store/yc4n0dljm8s9wajylq79cv525xfi4v8n-source/MezVim",
         "type": "path"
       }
     },
@@ -270,37 +270,6 @@
         "type": "github"
       }
     },
-    "nixCats_2": {
-      "inputs": {
-        "nixCats": "nixCats_3",
-        "nixpkgs": "nixpkgs_3"
-      },
-      "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-I5ELU2lz80TAW5X5RjOWQ0PhMz0wnQjNfLa9GOVxzek=",
-        "path": "/nix/store/wj93q64wm7f1bvn6bakj4yp0gldsnyz2-source/nixCats",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/wj93q64wm7f1bvn6bakj4yp0gldsnyz2-source/nixCats",
-        "type": "path"
-      }
-    },
-    "nixCats_3": {
-      "locked": {
-        "lastModified": 1737130711,
-        "narHash": "sha256-YF8tTmSosk1hBGa7xOpe1XAkTGtMeZhJtSFlecx++FU=",
-        "owner": "BirdeeHub",
-        "repo": "nixCats-nvim",
-        "rev": "5ccd7b5d9ce601d73baf795943d8ac7ed46aa3d4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "BirdeeHub",
-        "repo": "nixCats-nvim",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1737557748,
@@ -335,22 +304,6 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1737003892,
-        "narHash": "sha256-RCzJE9wKByLCXmRBp+z8LK9EgdW+K+W/DXnJS4S/NVo=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "ae06b9c2d83cb5c8b12d7d0e32692e93d1379713",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_4": {
-      "locked": {
         "lastModified": 1737469691,
         "narHash": "sha256-nmKOgAU48S41dTPIXAq0AHZSehWUn6ZPrUKijHAMmIk=",
         "owner": "NixOS",
@@ -365,7 +318,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1736798957,
         "narHash": "sha256-qwpCtZhSsSNQtK4xYGzMiyEDhkNzOCz/Vfu4oL2ETsQ=",
@@ -385,8 +338,7 @@
       "inputs": {
         "MezVim": "MezVim",
         "home-manager": "home-manager",
-        "nixCats": "nixCats_2",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_3",
         "stylix": "stylix"
       }
     },
@@ -402,7 +354,7 @@
         "git-hooks": "git-hooks",
         "gnome-shell": "gnome-shell",
         "home-manager": "home-manager_2",
-        "nixpkgs": "nixpkgs_5",
+        "nixpkgs": "nixpkgs_4",
         "systems": "systems",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",

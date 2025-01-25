@@ -2,7 +2,6 @@ require('m42.plugins.oilvim')
 require('m42.plugins.nnpain')
 require('m42.plugins.highlight')
 require('m42.plugins.rainbowDelimiter')
-require('m42.plugins.dashboard')
 
 require('lze').load{
     {import = "m42.plugins.telescope", },

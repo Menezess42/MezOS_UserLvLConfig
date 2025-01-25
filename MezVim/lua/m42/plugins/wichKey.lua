@@ -2,12 +2,22 @@ return {
     {
         "which-key.nvim",
         for_cat = 'general.extra',
-        -- cmd = { "" },
         event = "DeferredUIEnter",
-        -- ft = "",
-        -- keys = "",
         after = function (plugin)
             require('which-key').setup({
+                window = {
+                    border = "rounded", -- Borda arredondada
+                    position = "bottom", -- Posição: pode ser "bottom" ou "top"
+                    margin = { 1, 0, 1, 0 }, -- Margens ao redor da janela
+                    padding = { 1, 1, 1, 1 }, -- Padding interno da janela
+                    winblend = 10, -- Transparência (0-100)
+                },
+                layout = {
+                    height = { min = 4, max = 25 }, -- Altura da janela
+                    width = { min = 20, max = 50 }, -- Largura da janela
+                    spacing = 3, -- Espaçamento entre colunas
+                    align = "left", -- Alinhamento das colunas
+                },
             })
             require('which-key').add {
                 { "<leader><leader>", group = "buffer commands" },

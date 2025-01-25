@@ -60,7 +60,6 @@
 						nvim-highlight-colors
                         nvim-autopairs
                         rainbow-delimiters-nvim
-                        dashboard-nvim
 				];
 				extra = [
 					oil-nvim
