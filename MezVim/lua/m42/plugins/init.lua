@@ -1,5 +1,7 @@
 require('m42.plugins.oilvim')
 require('m42.plugins.nnpain')
+require('m42.plugins.highlight')
+
 require('lze').load{
     {import = "m42.plugins.telescope", },
     {import = "m42.plugins.treesitter", },
@@ -9,5 +11,6 @@ require('lze').load{
     {import = "m42.plugins.markdownprev"},
     {import = "m42.plugins.undotree"},
     {import = "m42.plugins.comment"},
+    {import = "m42.plugins.rainbowDelimiter"},
     {import = "m42.plugins.indentblankline"},
 }

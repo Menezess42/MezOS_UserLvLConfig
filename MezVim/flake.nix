@@ -128,6 +128,7 @@
 						comment-nvim
 						undotree
 						indent-blankline-nvim
+                        rainbow-delimiters-nvim
 						vim-startuptime
 				];
 			};
