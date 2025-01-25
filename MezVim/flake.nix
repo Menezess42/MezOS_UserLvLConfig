@@ -58,6 +58,7 @@
 						plenary-nvim
 						no-neck-pain-nvim
 						nvim-highlight-colors
+                        nvim-autopairs
 				];
 				extra = [
 					oil-nvim
