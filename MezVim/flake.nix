@@ -59,6 +59,7 @@
 						no-neck-pain-nvim
 						nvim-highlight-colors
                         nvim-autopairs
+                        rainbow-delimiters-nvim
 				];
 				extra = [
 					oil-nvim
@@ -128,7 +129,6 @@
 						comment-nvim
 						undotree
 						indent-blankline-nvim
-                        rainbow-delimiters-nvim
 						vim-startuptime
 				];
 			};
