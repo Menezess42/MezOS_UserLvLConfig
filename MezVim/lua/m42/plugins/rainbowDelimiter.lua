@@ -2,7 +2,8 @@ return{
   -- Plugin rainbow-delimiters com lazy loading
     {
         "HiPhish/rainbow-delimiters.nvim",
-        event = "BufReadPost", -- Lazy loading ao abrir arquivos
+        for_cat = 'general.extra',
+        event = "DeferredUIEnter",
         config = function()
             local highlight = {
                 "RainbowRed",
