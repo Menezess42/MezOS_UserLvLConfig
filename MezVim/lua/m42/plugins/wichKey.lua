@@ -5,7 +5,7 @@ return {
         event = "DeferredUIEnter",
         after = function (plugin)
             require('which-key').setup({
-                window = {
+                win = {
                     border = "rounded", -- Borda arredondada
                     position = "bottom", -- Posição: pode ser "bottom" ou "top"
                     margin = { 1, 0, 1, 0 }, -- Margens ao redor da janela

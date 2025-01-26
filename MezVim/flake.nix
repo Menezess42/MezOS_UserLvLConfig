@@ -88,6 +88,8 @@
 			neonixdev = with pkgs.vimPlugins; [
 				lazydev-nvim
 			];
+            python = with pkgs.vimPlugins; [
+            ];
 			general = {
 				cmp = with pkgs.vimPlugins; [
 					nvim-cmp
