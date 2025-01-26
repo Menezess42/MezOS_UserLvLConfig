@@ -89,6 +89,7 @@
 				lazydev-nvim
 			];
             python = with pkgs.vimPlugins; [
+            ale
             ];
 			general = {
 				cmp = with pkgs.vimPlugins; [

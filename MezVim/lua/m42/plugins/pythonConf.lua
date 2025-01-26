@@ -1,46 +1,22 @@
 return {
+    -- {
+    --     "black",
+    --     for_cat = "python",
+    --     ft = "python",
+    -- },
     {
-        -- --     "nvim-lspconfig",
-        --     ft = "python",
-        --     config = function ()
-            --         local lspconfig = require("lspconfig")
-            --         lspconfig.pylsp.setup({
-                --             settings = {
-                    --                 pylsp = {
-                        --                     plugins = {
-                            --                         pytflake = {enabled = true},
-                            --                         flake8 = {enabled = false},
-                            --                         black = {enable = true},
-                            --                         jedi = {enable = true},
-                            --                     },
-                            --                 },
-                            --             },
-                            --         })
-                            --     end,
-                            -- },
-                            -- {
-                                --     "nvim-dap",
-                                --     ft = "python",
-                                --     config = function ()
-                                    --         local dap = require('dap')
-                                    --         dap.adapters.python = {
-                                        --             type = "executable",
-                                        --             command = "python",
-                                        --             args = {"-m", "debugpy.adapter"}
-                                        --         }
-                                        --         dap.configurations.python ={
-                                            --             {
-                                                --                 type = "python",
-                                                --                 request = "launch",
-                                                --                 name = "launch file",
-                                                --                 program = "${file}",
-                                                --                 pythonpath = function ()
-                                                    --                     return os.getenv("VIRTUAL_ENV") and os.getenv("VIRTUAL_ENV").. "/bin/python" or "python"
-                                                    --                 end,
-                                                    --             },
-                                                    --         }
-                                                    --     end,
-                                                    -- },
-                                                    --
-                                                }
-                                            }
+        "ale",
+        for_cat = "python",
+        ft = "python",
+        config = function()
+            vim.g.ale_linters = {
+                python = { "flake8", "pyflakes" },
+            }
+            vim.g.ale_fixers = {
+                python = { "black" },
+            }
+            vim.g.ale_python_flake8_executable = "flake8"
+            vim.g.ale_python_black_executable = "black"
+        end,
+    },
+}
