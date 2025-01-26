@@ -66,7 +66,7 @@
  -- 	end
  -- end
 
- Aplicar destaques
+ -- Aplicar destaques
  apply_highlight(base_highlight_groups)
  apply_highlight(plugin_highlight_groups)
 
