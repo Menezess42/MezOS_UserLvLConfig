@@ -25,6 +25,9 @@
 				"d" = "/mnt/hdmenezess42/";
 				"home" = "~/.config/home-manager/";
                 "gp" = "/mnt/hdmenezess42/GitProjects/";
+                "bh" = "home-manager switch --show-trace";
+                "bn" = "sudo nixos-rebuild switch";
+                "ngc" = "sudo nix-collect-garbage -d";
 			};
 			zplug={
 				enable = true;
