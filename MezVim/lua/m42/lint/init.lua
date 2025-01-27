@@ -14,6 +14,7 @@ require('lze').load {
         -- markdown = {'vale',},
         -- javascript = { 'eslint' },
         -- typescript = { 'eslint' },
+        python = {'flake8'},
       }
 
       vim.api.nvim_create_autocmd({ "BufWritePost" }, {
