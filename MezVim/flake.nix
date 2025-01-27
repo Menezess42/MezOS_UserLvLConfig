@@ -60,6 +60,7 @@
 						nvim-highlight-colors
                         nvim-autopairs
                         rainbow-delimiters-nvim
+                        lsp_lines-nvim
 				];
 				extra = [
 					oil-nvim
