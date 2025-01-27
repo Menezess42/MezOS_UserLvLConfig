@@ -90,20 +90,20 @@ servers.pyright = {
     },
 }
 
-servers.jedi_language_server = {
-    python = {
-        completion = {
-            enable = true,  -- Habilita completamento automático
-            disableSnippets = true,  -- Desabilita snippets para evitar redundância
-        },
-        hover = {
-            enable = true,  -- Habilita hover para tipos e descrições de variáveis
-        },
-        signature = {
-            enable = true,  -- Habilita assinatura de funções
-        },
-    },
-}
+-- servers.jedi_language_server = {
+--     python = {
+--         completion = {
+--             enable = true,  -- Habilita completamento automático
+--             disableSnippets = true,  -- Desabilita snippets para evitar redundância
+--         },
+--         hover = {
+--             enable = true,  -- Habilita hover para tipos e descrições de variáveis
+--         },
+--         signature = {
+--             enable = true,  -- Habilita assinatura de funções
+--         },
+--     },
+-- }
 -- servers.rust_analyzer = {},
 -- servers.tsserver = {},
 -- servers.html = { filetypes = { 'html', 'twig', 'hbs'} },
