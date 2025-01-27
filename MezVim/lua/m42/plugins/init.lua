@@ -19,4 +19,8 @@ require('lze').load{
     {import = "m42.plugins.gitsigns"},
     {import = "m42.plugins.wichKey"},
     -- {import = "m42.plugins.pythonConf"}
+    {
+        "lsp_lines-nvim",
+        require('lsp_lines').setup()
+    }
 }

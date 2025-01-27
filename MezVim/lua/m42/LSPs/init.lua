@@ -86,7 +86,7 @@ servers.pyright = {
             typeCheckingMode = "basic", -- Opções: off, basic, strict
             useLibraryCodeForTypes = true,
         },
-        pythonPath = "python3", -- Você pode especificar o caminho do Python se necessário
+        -- pythonPath = "python3", -- Você pode especificar o caminho do Python se necessário
     },
 }
 -- servers.rust_analyzer = {},
