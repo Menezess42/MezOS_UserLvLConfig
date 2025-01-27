@@ -71,7 +71,7 @@ end
 
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
---  All of them are listed in https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+--  All of them are listed in https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md # MAKE A PULLREQUEST HERE
 --
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
@@ -79,7 +79,16 @@ end
 
 -- servers.clangd = {},
 -- servers.gopls = {},
--- servers.pyright = {},
+servers.pyright = {
+    python = {
+        analysis = {
+            autoImportCompletions = true,
+            typeCheckingMode = "basic", -- Opções: off, basic, strict
+            useLibraryCodeForTypes = true,
+        },
+        pythonPath = "python3", -- Você pode especificar o caminho do Python se necessário
+    },
+}
 -- servers.rust_analyzer = {},
 -- servers.tsserver = {},
 -- servers.html = { filetypes = { 'html', 'twig', 'hbs'} },

@@ -90,6 +90,7 @@
 			];
             python = with pkgs.vimPlugins; [
             ale
+            pyright
             ];
 			general = {
 				cmp = with pkgs.vimPlugins; [
