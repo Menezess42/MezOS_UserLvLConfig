@@ -18,4 +18,5 @@ require('lze').load{
     {import = "m42.plugins.lualine",},
     {import = "m42.plugins.gitsigns",},
     {import = "m42.plugins.wichKey",},
+    {import = "m42.plugins.print",},
 }
