@@ -24,6 +24,7 @@
 				"cls" = "clear";
 				"d" = "/mnt/hdmenezess42/";
 				"home" = "~/.config/home-manager/";
+                "gp" = "/mnt/hdmenezess42/GitProjects/"
 			};
 			zplug={
 				enable = true;
