@@ -6,8 +6,10 @@
   nixpkgs.config.allowUnfree=true;
   imports = [
     ./modules/zsh.nix
+    ./modules/tmux.nix
   ];
   zsh.enable=true;
+  tmux.enable=true;
   home.packages = with pkgs; [
   # neovim
   xclip
