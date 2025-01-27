@@ -4,7 +4,6 @@ require('m42.plugins.highlight')
 require('m42.plugins.rainbowDelimiter')
 
 require('lze').load{
-    {import = "m42.plugins.aerial", },
     {import = "m42.plugins.telescope", },
     {import = "m42.plugins.treesitter", },
     {import = "m42.plugins.completion", },
