@@ -19,4 +19,5 @@ require('lze').load{
     {import = "m42.plugins.gitsigns"},
     {import = "m42.plugins.wichKey"},
     -- {import = "m42.plugins.pythonConf"}
+    {import = "m42.plugins.aerial"},
 }
