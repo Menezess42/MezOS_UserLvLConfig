@@ -40,12 +40,12 @@
 
 # Barra de status
                 set -g status-style bg="#0a506e"             # Fundo escuro (azul profundo)
-                set -g status-style fg="#e5dccb"             # Texto principal (cinza claro)
+                set -g status-style fg="#cc8f62"             # Texto principal (cinza claro)
 
 # Configuração dos painéis na barra de status
                 set -g window-status-format "#I #W"         # Formato: índice + nome
                 set -g window-status-style bg="#585f62"     # Cinza mais escuro
-                set -g window-status-style fg="#e5dccb"     # Texto claro
+                set -g window-status-style fg="#cc8f62"     # Texto claro
 
 # Painel ativo na barra de status
                 set -g window-status-current-style bg="#e35b22"  # Laranja vibrante
