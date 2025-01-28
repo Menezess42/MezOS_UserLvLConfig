@@ -19,8 +19,7 @@ if nixCats('neonixdev') then
       nixd = {
         nixpkgs = {
           -- nixd requires some configuration in flake based configs.
-          -- luckily, the nixCats plugin is here to pass whatever we need!
-          expr = [[import (builtins.getFlake "]] .. nixCats.extra("nixdExtras.nixpkgs") .. [[") { }   ]],
+          -- luckily, the nixCats plugin is here to pass whatever we need! expr = [[import (builtins.getFlake "]] .. nixCats.extra("nixdExtras.nixpkgs") .. [[") { }   ]],
         },
         formatting = {
           command = { "nixfmt" }

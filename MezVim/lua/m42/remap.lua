@@ -40,7 +40,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, {desc = 'Open diagno
 vim.keymap.set("n", "p", '"_dP', { noremap = true, silent = true }) -- Normal Mode
 vim.keymap.set("v", "p", '"_dP', { noremap = true, silent = true }) -- Visual Mode
 
-vim.keymap.set('n', '<C-k>', ':wincmd k <CR>')
-vim.keymap.set('n', '<C-j>', ':wincmd j <CR>')
-vim.keymap.set('n', '<C-h>', ':wincmd h <CR>')
-vim.keymap.set('n', '<C-l>', ':wincmd l <CR>')
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')

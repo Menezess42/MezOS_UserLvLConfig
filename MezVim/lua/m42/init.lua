@@ -16,3 +16,22 @@ if nixCats('format') then
 end
 require("m42.plugins")
 require('m42.LSPs')
+
+
+
+local colors = {
+    "#e35b22", -- Laranja vibrante
+    "#84dcd4", -- Ciano claro
+    "#66a1b8", -- Azul médio
+    "#cc8f62", -- Marrom claro
+    "#58c5cd"  -- Azul ciano
+}
+
+-- Função para alterar dinamicamente a cor do cursor
+local function animate_cursor()
+    local i = 1
+    vim.fn.timer_start(300, function()
+        vim.api.nvim_set_hl(0, "Cursor", { fg = colors[i], bg = colors[i] })
+        i = (i % #colors) + 1
+    end, { ["repeat"] = -1 }) -- Repetir indefinidamente
+end
