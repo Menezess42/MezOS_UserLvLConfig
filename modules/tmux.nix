@@ -27,7 +27,7 @@
       set -g pane-border-style fg="#653b27"        # Marrom escuro (inativo)
 
 # Barra de status
-      set -g status-style bg="#0a506e"             # Fundo escuro (azul profundo)
+      set -g status-style bg="##585f62"             # Fundo escuro (azul profundo)
       set -g status-style fg="#e5dccb"             # Texto principal (cinza claro)
 
 # Configuração dos painéis na barra de status
