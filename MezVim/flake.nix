@@ -60,6 +60,7 @@
 						nvim-highlight-colors
                         nvim-autopairs
                         rainbow-delimiters-nvim
+                        vim-tmux-navigator
                         #lsp_lines-nvim
 				];
 				extra = [

@@ -8,11 +8,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-dU8EEyFsru6qGQhUqYii5Xc1NYnf1OalxDFVHI0LGlQ=",
-        "path": "/nix/store/a94cwv0xnjgb12n14zfafm703zl0jhw0-source/MezVim",
+        "path": "/nix/store/haz0d7qpzwh3vjh4shhy1dvg1jzcgjr1-source/MezVim",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/a94cwv0xnjgb12n14zfafm703zl0jhw0-source/MezVim",
+        "path": "/nix/store/haz0d7qpzwh3vjh4shhy1dvg1jzcgjr1-source/MezVim",
         "type": "path"
       }
     },
