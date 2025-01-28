@@ -39,7 +39,7 @@
                 set -g pane-border-style fg="#653b27"        # Marrom escuro (inativo)
 
 # Barra de status
-                set -g status-style bg="#000000"             # Fundo escuro (azul profundo)
+                set -g status-style bg="#0a506e"             # Fundo escuro (azul profundo)
                 set -g status-style fg="#e5dccb"             # Texto principal (cinza claro)
 
 # Configuração dos painéis na barra de status
@@ -52,7 +52,7 @@
                 set -g window-status-current-style fg="#0a506e"  # Fundo escuro
 
 # Indicadores adicionais na barra de status
-                set -g status-left "#[bg=#66a1b8,fg=#0a506e] #S #[default]"  # Nome da sessão
+                set -g status-left "#[bg=#66a1b8,fg=#0a506e] #S #[fg=#84dcd4]"  # Nome da sessão
                 set -g status-right "#[fg=#cc8f62] %Y-%m-%d #[fg=#84dcd4] %H:%M #[default]"
                 '';
         };
