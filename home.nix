@@ -55,7 +55,7 @@
       base02 = "653b27";  # Marrom escuro para elementos menos destacados
       base03 = "cc8f62";  # Comentários (marrom claro)
       base04 = "66a1b8";  # Azul médio para variáveis
-      base05 = "548851";  # Texto principal (cinza claro)
+      base05 = "e5dccb";  # Texto principal (cinza claro)
       base06 = "58c5cd";  # Azul ciano para destaques leves
       base07 = "548851";  # Verde suave para pequenos destaques
       base08 = "e35b22";  # Laranja vibrante (palavras-chave)
