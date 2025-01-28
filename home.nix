@@ -9,7 +9,7 @@
     ./modules/tmux.nix
   ];
   zsh.enable=true;
-  tmux.enable=false;
+  tmux.enable=true;
   home.packages = with pkgs; [
   # neovim
   xclip
@@ -42,7 +42,6 @@
     qalculate-gtk
     git
     thefuck
-    tmux
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
