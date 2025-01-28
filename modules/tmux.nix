@@ -28,6 +28,29 @@ set-option -ga terminal-overrides ",xterm-256color:Tc"
 # ----- Outras configurações -----
 # Posicionar a barra de status na parte superior
       set-option -g status-position top
+
+
+# ----- Configuração visual baseada no Stylix -----
+# Configuração de bordas dos painéis
+set -g pane-active-border-style fg="#e35b22"  # Laranja vibrante (ativo)
+set -g pane-border-style fg="#653b27"        # Marrom escuro (inativo)
+
+# Barra de status
+set -g status-style bg="#0a506e"             # Fundo escuro (azul profundo)
+set -g status-style fg="#e5dccb"             # Texto principal (cinza claro)
+
+# Configuração dos painéis na barra de status
+set -g window-status-format "#I #W"         # Formato: índice + nome
+set -g window-status-style bg="#585f62"     # Cinza mais escuro
+set -g window-status-style fg="#e5dccb"     # Texto claro
+
+# Painel ativo na barra de status
+set -g window-status-current-style bg="#e35b22"  # Laranja vibrante
+set -g window-status-current-style fg="#0a506e"  # Fundo escuro
+
+# Indicadores adicionais na barra de status
+set -g status-left "#[bg=#66a1b8,fg=#0a506e] #S #[default]"  # Nome da sessão
+set -g status-right "#[fg=#cc8f62] %Y-%m-%d #[fg=#84dcd4] %H:%M #[default]"
       '';
     };
   };
