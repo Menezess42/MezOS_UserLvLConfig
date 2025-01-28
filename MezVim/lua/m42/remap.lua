@@ -44,3 +44,9 @@ vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+
+vim.keymap.set("n", "<leader>sh", "<C-w>s", { noremap = true, silent = true }) -- Split horizontal
+vim.keymap.set("n", "<leader>sv", "<C-w>v", { noremap = true, silent = true }) -- Split vertical
+vim.keymap.set("n", "<leader>sc", "<C-w>c", { noremap = true, silent = true }) -- Fechar janela ativa
+vim.keymap.set("n", "<leader>so", "<C-w>o", { noremap = true, silent = true }) -- Fechar todas as janelas, exceto a atual
+
