@@ -7,6 +7,9 @@
     config = lib.mkIf config.tmux.enable {
         programs.tmux = {
             enable = true; # Habilita o Tmux no sistema
+            plugins = with pkgs.tmuxPlugins; [ 
+            vim-tmux-navigator
+            ];
                 extraConfig = ''
 # ----- Tecla prefix padrão -----
 # Alterar a tecla prefix de C-b para C-s
