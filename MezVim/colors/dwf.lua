@@ -150,7 +150,7 @@ local bg_colors  = {
 				Error = { fg = colors.base08, bg = colors.base00, bold = true },
 				Debug = { fg = colors.base0F },
 
-Cursor = { fg = colors.base00, bg = "#00FF00" }, -- Cor do cursor verde
+Cursor = { fg = colors.base07, bg = colors.base07 }, -- Cor do cursor verde
 				}
 
 				for group, settings in pairs(highlight_groups) do
