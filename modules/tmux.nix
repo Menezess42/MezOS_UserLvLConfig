@@ -17,7 +17,6 @@
 
 set -g default-terminal "tmux-256color"
 set-option -ga terminal-overrides ",xterm-256color:Tc"
-set -g status-style bg=default
 
 # ----- Movimentação entre painéis (inspirado no Vim) -----
       bind-key h select-pane -L  # Move para o painel à esquerda
