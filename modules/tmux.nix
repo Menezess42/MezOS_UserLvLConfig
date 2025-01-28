@@ -8,42 +8,44 @@
     programs.tmux = {
       enable = true; # Habilita o Tmux no sistema
       extraConfig = ''
-     # Alterar a tecla prefix padrão (C-b) para C-s
-        # O prefix é necessário para executar comandos no Tmux.
-        set -g prefix C-s
+# ----- Tecla prefix padrão -----
+# Alterar a tecla prefix de C-b para C-s
+      set -g prefix C-s
 
-        # Ativar suporte ao mouse para facilitar uso em terminais modernos
-        set -g mouse on
+# Ativar suporte ao mouse
+      set -g mouse on
 
-        # ----- Movimentação entre painéis (inspirado no Vim) -----
-        # C-s + h: Move para o painel à esquerda
-        bind-key h select-pane -L  
-        # C-s + j: Move para o painel abaixo
-        bind-key j select-pane -D  
-        # C-s + k: Move para o painel acima
-        bind-key k select-pane -U  
-        # C-s + l: Move para o painel à direita
-        bind-key l select-pane -R  
+# ----- Movimentação entre painéis (inspirado no Vim) -----
+      bind-key h select-pane -L  # Move para o painel à esquerda
+      bind-key j select-pane -D  # Move para o painel abaixo
+      bind-key k select-pane -U  # Move para o painel acima
+      bind-key l select-pane -R  # Move para o painel à direita
 
-        # ----- Configuração visual baseada no Stylix -----
-        # Configurações de cores inspiradas no tema Gruvbox com ajustes personalizados
+# ----- Configuração visual baseada no Stylix -----
+# Configuração de bordas dos painéis
+      set -g pane-active-border-style fg="#e35b22"  # Laranja vibrante (ativo)
+      set -g pane-border-style fg="#653b27"        # Marrom escuro (inativo)
 
-        # Fundo da barra de status (azul profundo)
-        set-option -g status-bg colour0a506e
-        # Texto da barra de status (cinza claro)
-        set-option -g status-fg coloure5dccb
+# Barra de status
+      set -g status-style bg="#0a506e"             # Fundo escuro (azul profundo)
+      set -g status-style fg="#e5dccb"             # Texto principal (cinza claro)
 
-        # Painéis inativos na barra de status (marrom escuro e cinza claro)
-        set-window-option -g window-status-bg colour653b27
-        set-window-option -g window-status-fg coloure5dccb
+# Configuração dos painéis na barra de status
+      set -g window-status-format "#I #W"         # Formato: índice + nome
+      set -g window-status-style bg="#585f62"     # Cinza mais escuro
+      set -g window-status-style fg="#e5dccb"     # Texto claro
 
-        # Painel ativo na barra de status (azul médio e texto claro)
-        set-window-option -g window-status-current-bg colour66a1b8
-        set-window-option -g window-status-current-fg coloure5dccb
+# Painel ativo na barra de status
+      set -g window-status-current-style bg="#e35b22"  # Laranja vibrante
+      set -g window-status-current-style fg="#0a506e"  # Fundo escuro
 
-        # ----- Outras configurações -----
-        # Posicionar a barra de status na parte superior
-        set-option -g status-position top
+# Indicadores adicionais na barra de status
+      set -g status-left "#[bg=#66a1b8,fg=#0a506e] #S #[default]"  # Nome da sessão
+      set -g status-right "#[fg=#cc8f62] %Y-%m-%d #[fg=#84dcd4] %H:%M #[default]"
+
+# ----- Outras configurações -----
+# Posicionar a barra de status na parte superior
+      set-option -g status-position top
       '';
     };
   };
