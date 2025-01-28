@@ -16,6 +16,8 @@
       set -g mouse on
 
 set -g default-terminal "tmux-256color"
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+set -g status-style bg=default
 
 # ----- Movimentação entre painéis (inspirado no Vim) -----
       bind-key h select-pane -L  # Move para o painel à esquerda
@@ -23,27 +25,6 @@ set -g default-terminal "tmux-256color"
       bind-key k select-pane -U  # Move para o painel acima
       bind-key l select-pane -R  # Move para o painel à direita
 
-# ----- Configuração visual baseada no Stylix -----
-# Configuração de bordas dos painéis
-      set -g pane-active-border-style fg="#e35b22"  # Laranja vibrante (ativo)
-      set -g pane-border-style fg="#653b27"        # Marrom escuro (inativo)
-
-# Barra de status
-      set -g status-style bg="#e35b22"             # Fundo escuro (azul profundo)
-      set -g status-style fg="#cc8f62"            # Texto principal (cinza claro)
-
-# Configuração dos painéis na barra de status
-      set -g window-status-format "#I #W"         # Formato: índice + nome
-      set -g window-status-style bg="#e35b22"     # Cinza mais escuro
-      set -g window-status-style fg="#cc8f62"     # Texto claro
-
-# Painel ativo na barra de status
-      set -g window-status-current-style bg="#e35b22"  # Laranja vibrante
-      set -g window-status-current-style fg="#cc8f62"  # Fundo escuro
-
-# Indicadores adicionais na barra de status
-      set -g status-left "#[bg=#cc8f62,fg=#84dcd4] #S #[bg=#cc8f62,fg=#84dcd4]"  # Nome da sessão
-      set -g status-right "#[fg=#cc8f62] %Y-%m-%d #[fg=#84dcd4] %H:%M #[default]"
 
 # ----- Outras configurações -----
 # Posicionar a barra de status na parte superior
