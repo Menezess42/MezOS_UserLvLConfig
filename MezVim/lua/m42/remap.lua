@@ -37,3 +37,10 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, {desc = 'Go to next diagnost
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, {desc='Open floating diagnostic message'})
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, {desc = 'Open diagnostic list'})
 
+vim.keymap.set("n", "p", '"_dP', { noremap = true, silent = true }) -- Normal Mode
+vim.keymap.set("v", "p", '"_dP', { noremap = true, silent = true }) -- Visual Mode
+
+vim.keymap.set('n', '<C-k>', ':wincmd k <CR>')
+vim.keymap.set('n', '<C-j>', ':wincmd j <CR>')
+vim.keymap.set('n', '<C-h>', ':wincmd h <CR>')
+vim.keymap.set('n', '<C-l>', ':wincmd l <CR>')
