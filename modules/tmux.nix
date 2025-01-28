@@ -36,20 +36,20 @@ set -g pane-active-border-style fg="#e35b22"  # Laranja vibrante (ativo)
 set -g pane-border-style fg="#653b27"        # Marrom escuro (inativo)
 
 # Barra de status
-set -g status-style bg="#0a506e"             # Fundo escuro (azul profundo)
-set -g status-style fg="#e5dccb"             # Texto principal (cinza claro)
+set -g status-style bg="#e35b22"             # Fundo escuro (azul profundo)
+set -g status-style fg="#cc8f62"             # Texto principal (cinza claro)
 
 # Configuração dos painéis na barra de status
 set -g window-status-format "#I #W"         # Formato: índice + nome
-set -g window-status-style bg="#585f62"     # Cinza mais escuro
-set -g window-status-style fg="#e5dccb"     # Texto claro
+set -g window-status-style bg="#e35b22"     # Cinza mais escuro
+set -g window-status-style fg="#cc8f62"     # Texto claro
 
 # Painel ativo na barra de status
 set -g window-status-current-style bg="#e35b22"  # Laranja vibrante
-set -g window-status-current-style fg="#0a506e"  # Fundo escuro
+set -g window-status-current-style fg="#cc8f62"  # Fundo escuro
 
 # Indicadores adicionais na barra de status
-set -g status-left "#[bg=#66a1b8,fg=#0a506e] #S #[default]"  # Nome da sessão
+set -g status-left "#[bg=#66a1b8,fg=#cc8f62] #S #[bg=#66a1b8,fg=#cc8f62]"  # Nome da sessão
 set -g status-right "#[fg=#cc8f62] %Y-%m-%d #[fg=#84dcd4] %H:%M #[default]"
       '';
     };
