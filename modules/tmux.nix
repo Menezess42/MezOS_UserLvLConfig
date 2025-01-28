@@ -49,7 +49,7 @@
 
 # Painel ativo na barra de status
                 set -g window-status-current-style bg="#e35b22"  # Laranja vibrante
-                set -g window-status-current-style fg="#0a506e"  # Fundo escuro
+                set -g window-status-current-style fg="#84dcd4"  # Fundo escuro
 
 # Indicadores adicionais na barra de status
                 set -g status-left "#[bg=#66a1b8,fg=#000000] #S #[bg=#66a1b8,fg=#84dcd4]"  # Nome da sessão
