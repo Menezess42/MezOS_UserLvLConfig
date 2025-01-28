@@ -40,7 +40,7 @@
       set -g window-status-current-style fg="#cc8f62"  # Fundo escuro
 
 # Indicadores adicionais na barra de status
-      set -g status-left "#[bg=#66a1b8,fg=#0a506e] #S #[default]"  # Nome da sessão
+      set -g status-left "#[bg=#66a1b8,fg=#84dcd4] #S #[default]"  # Nome da sessão
       set -g status-right "#[fg=#cc8f62] %Y-%m-%d #[fg=#84dcd4] %H:%M #[default]"
 
 # ----- Outras configurações -----
