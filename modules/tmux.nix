@@ -13,8 +13,6 @@
                 extraConfig = ''
 # ----- Tecla prefix padrão -----
 # Alterar a tecla prefix de C-b para C-s
-                    umbind C-b
-                    set -g prefix C-s
 # Ativar suporte ao mouse
                     set -g mouse on
 
