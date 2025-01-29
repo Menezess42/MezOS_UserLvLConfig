@@ -66,7 +66,6 @@
 				extra = [
 					oil-nvim
 						nvim-web-devicons
-                        aerial-nvim
 				];
 			};
 		};
