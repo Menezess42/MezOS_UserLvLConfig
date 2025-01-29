@@ -12,7 +12,7 @@
             ];
                 extraConfig = ''
 # ----- Configuração Geral -----
-                    set -g prefix C-d            # Alterar prefix para Ctrl + S
+                    set -g prefix C-s            # Alterar prefix para Ctrl + S
                     set -g mouse on              # Ativar suporte ao mouse
                     set -g default-terminal "tmux-256color"
                     set-option -ga terminal-overrides ",xterm-256color:Tc"
@@ -24,8 +24,8 @@
                     bind-key l select-pane -R    # Painel à direita
 
 # ----- Split de painéis -----
-                    bind-key ~ split-window -h   # Split vertical
-                    bind-key ; split-window -v   # Split horizontal
+                    bind-key ; split-window -h   # Split vertical
+                    bind-key . split-window -v   # Split horizontal
 
 # ----- Gerenciamento de Janelas -----
                     bind-key r command-prompt "rename-window %%"   # Renomear janela
