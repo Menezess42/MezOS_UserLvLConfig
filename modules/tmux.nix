@@ -51,10 +51,7 @@
 # Posicionar a barra de status na parte superior
                     set-option -g status-position top
 
-
-                    set -g status-style bg=default
-
-
+                    #set -g status-style bg=default
 # ----- Configuração visual baseada no Stylix -----
 # Configuração de bordas dos painéis
                     set -g pane-active-border-style fg="#e35b22"  # Laranja vibrante (ativo)
