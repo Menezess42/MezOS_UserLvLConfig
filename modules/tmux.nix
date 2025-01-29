@@ -26,7 +26,7 @@
                     bind-key j select-pane -D  # Move para o painel abaixo
                     bind-key k select-pane -U  # Move para o painel acima
                     bind-key l select-pane -R  # Move para o painel à direita
-                    umbind ;
+                    unbind ;
                     bind-key ; split-window -h
 
 
