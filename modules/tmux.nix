@@ -23,15 +23,6 @@
                     bind-key k select-pane -U  # Move para o painel acima
                     bind-key l select-pane -R  # Move para o painel à direita
 
-                    unbind-key ;
-                    bind-key ; split-window -h
-                    unbind-key .
-                    bind-key . split-window -v
-
-                    unbind-r
-                    bind-key r command-prompt "rename-window %%"
-
-
 
 
 # ----- Outras configurações -----
