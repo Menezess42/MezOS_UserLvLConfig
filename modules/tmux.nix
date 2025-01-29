@@ -13,8 +13,8 @@
                 extraConfig = ''
 # ----- Tecla prefix padrão -----
 # Alterar a tecla prefix de C-b para C-s
+                    umbind C-b
                     set -g prefix C-s
-
 # Ativar suporte ao mouse
                     set -g mouse on
 
@@ -26,6 +26,7 @@
                     bind-key j select-pane -D  # Move para o painel abaixo
                     bind-key k select-pane -U  # Move para o painel acima
                     bind-key l select-pane -R  # Move para o painel à direita
+                    umbind ;
                     bind-key ; split-window -h
 
 
