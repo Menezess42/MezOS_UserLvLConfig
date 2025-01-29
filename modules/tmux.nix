@@ -12,8 +12,7 @@
             ];
                 extraConfig = ''
 # ----- Configuração Geral -----
-                    set -g prefix C-s            # Alterar prefix para Ctrl + S
-                    unbind C-b                   # Desvincular o prefix padrão
+                    set -g prefix C-d            # Alterar prefix para Ctrl + S
                     set -g mouse on              # Ativar suporte ao mouse
                     set -g default-terminal "tmux-256color"
                     set-option -ga terminal-overrides ",xterm-256color:Tc"
