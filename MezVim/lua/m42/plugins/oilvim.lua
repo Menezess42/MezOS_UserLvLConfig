@@ -10,13 +10,13 @@ if nixCats('general.extra') then
         keymaps = {
             ["g?"] = "actions.show_help",
             ["<CR>"] = "actions.select",
-            ["<C-s>"] = "actions.select_vsplit",
+            ["<C-s>"] = "actions.select_split",
+            ["<C-l>"] = "",
             ["<C-h>"] = "",
             ["<C-t>"] = "actions.select_tab",
             ["<C-p>"] = "actions.preview",
             ["<C-c>"] = "actions.close",
             ["<C-;>"] = "actions.refresh",
-            ["<C-l>"] = "",
             ["-"] = "actions.parent",
             ["_"] = "actions.open_cwd",
             ["`"] = "actions.cd",
@@ -29,7 +29,12 @@ if nixCats('general.extra') then
     })
     vim.keymap.set("n", "-", "<cmd>Oil<CR>", { noremap = true, desc = 'Open Parent Directory' })
     vim.keymap.set("n", "<leader>-", "<cmd>Oil .<CR>", { noremap = true, desc = 'Open nvim root directory' })
-
-    vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { noremap = true, silent = true })
-    vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { noremap = true, silent = true })
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "oil",
+        callback = function()
+            vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { noremap = true, silent = true, buffer = true })
+            vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { noremap = true, silent = true, buffer = true })
+            vim.keymap.set("n", "<C-;>", "<cmd>Oil actions.refresh<CR>",  { noremap = true, silent = true, buffer = true })
+        end
+    })
 end
