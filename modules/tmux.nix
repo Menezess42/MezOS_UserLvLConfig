@@ -15,7 +15,6 @@
 # Alterar a tecla prefix de C-b para C-s
 # Ativar suporte ao mouse
                     set -g mouse on
-
                     set -g default-terminal "tmux-256color"
                     set-option -ga terminal-overrides ",xterm-256color:Tc"
 
@@ -24,10 +23,29 @@
                     bind-key j select-pane -D  # Move para o painel abaixo
                     bind-key k select-pane -U  # Move para o painel acima
                     bind-key l select-pane -R  # Move para o painel à direita
-                    unbind ;
-                    bind-key ; split-window -h
 
 
+# ----- Split de painéis -----
+                    unbind-key ~
+                    unbind-key ;
+                bind-key . split-window -h   # Split vertical
+                    bind-key , split-window -v   # Split horizontal
+
+# ----- Gerenciamento de Janelas -----
+                    unbind-key r
+                    bind-key r command-prompt "rename-window %%"   # Renomear janela
+                    
+                    unbind-key m
+                    bind-key m move-window 
+
+                    unbind-key Tab
+                    bind-key Tab last-window                       # Alternar para última janela
+
+                    unbind-key x
+                    bind-key x kill-pane                           # Fechar painel
+
+# Não precisa de unbind para z, pois já é padrão para alternar zoom
+                    bind-key z resize-pane -Z                      # Alternar zoom
 
 # ----- Outras configurações -----
 # Posicionar a barra de status na parte superior
