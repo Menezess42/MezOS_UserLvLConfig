@@ -12,7 +12,6 @@
             ];
                 extraConfig = ''
 # ----- Tecla prefix padrão -----
-# Alterar a tecla prefix de C-b para C-s
 # Ativar suporte ao mouse
                     set -g mouse on
                     set -g default-terminal "tmux-256color"
@@ -24,34 +23,25 @@
                     bind-key k select-pane -U  # Move para o painel acima
                     bind-key l select-pane -R  # Move para o painel à direita
 
-
-# ----- Split de painéis -----
-                    unbind-key ~
                     unbind-key ;
-                bind-key . split-window -h   # Split vertical
-                    bind-key , split-window -v   # Split horizontal
+                    bind-key ; split-window -h
+                    unbind-key .
+                    bind-key . split-window -v
 
-# ----- Gerenciamento de Janelas -----
-                    unbind-key r
-                    bind-key r command-prompt "rename-window %%"   # Renomear janela
-                    
-                    unbind-key m
-                    bind-key m move-window 
+                    unbind-r
+                    bind-key r command-prompt "rename-window %%"
 
-                    unbind-key Tab
-                    bind-key Tab last-window                       # Alternar para última janela
 
-                    unbind-key x
-                    bind-key x kill-pane                           # Fechar painel
 
-# Não precisa de unbind para z, pois já é padrão para alternar zoom
-                    bind-key z resize-pane -Z                      # Alternar zoom
 
 # ----- Outras configurações -----
 # Posicionar a barra de status na parte superior
                     set-option -g status-position top
 
-                    #set -g status-style bg=default
+
+                    set -g status-style bg=default
+
+
 # ----- Configuração visual baseada no Stylix -----
 # Configuração de bordas dos painéis
                     set -g pane-active-border-style fg="#e35b22"  # Laranja vibrante (ativo)
