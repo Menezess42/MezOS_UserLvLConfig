@@ -23,6 +23,9 @@
                     bind-key k select-pane -U  # Move para o painel acima
                     bind-key l select-pane -R  # Move para o painel à direita
 
+                    bind-key u split-window -v
+                    bind-key o split-window -h
+
 
 
 # ----- Outras configurações -----
