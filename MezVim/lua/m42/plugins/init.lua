@@ -40,8 +40,8 @@ require('lze').load{
     {
         'vim-dadbod-ui',
         dependencies = {
-            { 'tpope/vim-dadbod', lazy = true },
-            { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql', 'sqlite' }, lazy = true }, -- Optional
+            { 'vim-dadbod', lazy = true },
+            { 'vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql', 'sqlite' }, lazy = true }, -- Optional
         },
         cmd = {
             'DBUI',
