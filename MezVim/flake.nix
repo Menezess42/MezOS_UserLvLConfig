@@ -108,6 +108,9 @@
 						cmp-nvim-lsp-signature-help
 						cmp-cmdline-history
 						lspkind-nvim
+                        vim-dadbod
+                        vim-dadbod-completion
+                        vim-dadbod-ui
 				];
 				treesitter = with pkgs.vimPlugins; [
 					nvim-treesitter-textobjects
