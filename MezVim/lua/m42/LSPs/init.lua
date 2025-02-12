@@ -105,7 +105,7 @@ servers.jedi_language_server = {
 }
 -- servers.rust_analyzer = {},
 -- servers.tsserver = {},
-servers.tsserver = {
+servers.ts_ls = {
     init_options = {
         preferences = {
             importModuleSpecifierPreference = "relative",
