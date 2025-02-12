@@ -12,8 +12,9 @@ require('lze').load {
         -- NOTE: download some linters in lspsAndRuntimeDeps
         -- and configure them here
         -- markdown = {'vale',},
-        -- javascript = { 'eslint' },
-        -- typescript = { 'eslint' },
+        javascript = { 'eslint' },
+        typescript = { 'eslint' },
+        javascriptreact = {'eslint'},
         python = {'flake8'},
       }
 

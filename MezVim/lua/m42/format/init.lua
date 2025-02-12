@@ -21,6 +21,8 @@ require('lze').load {
           -- templ = { "templ" },
           -- Conform will run multiple formatters sequentially
           python = { "isort", "black" },
+          javascript = {"prettier"},
+          javascriptreact = {"prettier"},
           -- Use a sub-list to run only the first available formatter
           -- javascript = { { "prettierd", "prettier" } },
         },

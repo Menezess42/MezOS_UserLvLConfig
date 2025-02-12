@@ -105,7 +105,15 @@ servers.jedi_language_server = {
 }
 -- servers.rust_analyzer = {},
 -- servers.tsserver = {},
--- servers.html = { filetypes = { 'html', 'twig', 'hbs'} },
+servers.tsserver = {
+    init_options = {
+        preferences = {
+            importModuleSpecifierPreference = "relative",
+            quotePreference = "single",
+        },
+    },
+}
+servers.html = { filetypes = { 'html', 'twig', 'hbs'} }
 
 
 if not require('nixCatsUtils').isNixCats and nixCats('lspDebugMode') then
