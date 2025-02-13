@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
   # neovim
   xclip
+  libreoffice
 	  wl-clipboard
     lua-language-server
     eza
