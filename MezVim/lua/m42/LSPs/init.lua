@@ -113,8 +113,56 @@ servers.ts_ls = {
         },
     },
 }
-servers.html = { filetypes = { 'html', 'twig', 'hbs'} }
 
+servers.html = {
+    settings = {
+        html = {
+            format = {
+                enable = true, -- Ativar formatação automática
+            },
+            hover = {
+                documentation = true,
+                references = true,
+            },
+            validate = true,
+            suggest = {
+                html5 = true, -- Sugestões específicas para HTML5
+            },
+        },
+    },
+}
+
+servers.cssls = {
+    settings = {
+        css = {
+            validate = true, -- Validação de CSS
+            lint = {
+                unknownAtRules = "ignore", -- Evita alertas em regras desconhecidas
+            },
+        },
+        scss = {
+            validate = true,
+        },
+        less = {
+            validate = true,
+        },
+    },
+}
+
+servers.emmet_ls = {
+    init_options = {
+        html = {
+            snippets = {
+                enable = true, -- Ativar snippets do Emmet
+            },
+        },
+        css = {
+            snippets = {
+                enable = true,
+            },
+        },
+    },
+}
 
 if not require('nixCatsUtils').isNixCats and nixCats('lspDebugMode') then
   vim.lsp.set_log_level("debug")
