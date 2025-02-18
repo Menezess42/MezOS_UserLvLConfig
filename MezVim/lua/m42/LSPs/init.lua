@@ -114,7 +114,6 @@ servers.ts_ls = {
     },
 }
 servers.html = { filetypes = { 'html', 'twig', 'hbs'} }
-servers.css = { filetypes = { "css", "html"} }
 
 
 if not require('nixCatsUtils').isNixCats and nixCats('lspDebugMode') then
