@@ -149,20 +149,6 @@ servers.cssls = {
     },
 }
 
-servers.emmet_ls = {
-    init_options = {
-        html = {
-            snippets = {
-                enable = true, -- Ativar snippets do Emmet
-            },
-        },
-        css = {
-            snippets = {
-                enable = true,
-            },
-        },
-    },
-}
 
 if not require('nixCatsUtils').isNixCats and nixCats('lspDebugMode') then
   vim.lsp.set_log_level("debug")
