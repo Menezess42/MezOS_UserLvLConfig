@@ -66,7 +66,6 @@
 				extra = [
 					oil-nvim
 						nvim-web-devicons
-                        jupytext-nvim
 				];
 			};
 		};
@@ -98,6 +97,7 @@
 			general = {
 				cmp = with pkgs.vimPlugins; [
 					nvim-cmp
+                        jupytext-nvim
 						luasnip
 						friendly-snippets
 						cmp_luasnip

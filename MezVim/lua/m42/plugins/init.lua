@@ -57,7 +57,6 @@ require('lze').load{
         end,
     },
     {
-    'jupytext-nvim',
-    opts = {},
+        'jupytext-nvim',
     },
 }
