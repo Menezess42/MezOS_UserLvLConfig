@@ -19,7 +19,6 @@ require('lze').load{
     {import = "m42.plugins.gitsigns",},
     {import = "m42.plugins.wichKey",},
     {import = "m42.plugins.print",},
-    {import = "m42.plugins.jupytext"},
     {
         "vim-tmux-navigator",
         cmd = {
