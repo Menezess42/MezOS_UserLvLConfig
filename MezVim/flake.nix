@@ -66,6 +66,7 @@
 				extra = [
 					oil-nvim
 						nvim-web-devicons
+                        jupytext-nvim
 				];
 			};
 		};
