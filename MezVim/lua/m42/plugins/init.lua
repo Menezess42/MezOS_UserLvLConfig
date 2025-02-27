@@ -19,6 +19,7 @@ require('lze').load{
     {import = "m42.plugins.gitsigns",},
     {import = "m42.plugins.wichKey",},
     {import = "m42.plugins.print",},
+    {import = "m42.plugins.jupytext"},
     {
         "vim-tmux-navigator",
         cmd = {
@@ -55,8 +56,5 @@ require('lze').load{
             vim.g.db_ui_env_variable_url = 'DATABASE_URL'
             vim.g.db_ui_env_variable_name = 'DATABASE_NAME'
         end,
-    },
-    {
-        'jupytext-nvim',
     },
 }
