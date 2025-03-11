@@ -30,7 +30,7 @@ vim.o.updatetime = 250
 vim.o.timeoutlen = 0
 vim.o.timeout = false
 
-vim.opt.scrolloff = 25
+vim.opt.scrolloff = 20
 vim.o.mouse='a'
 
 vim.api.nvim_create_autocmd("FileType", {
