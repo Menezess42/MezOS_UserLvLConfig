@@ -25,7 +25,7 @@ local bg_colors  = {
 	"#01030b",
 	"#000000", }
 	local colors = {
-		base00 = bg_colors[11]--[[ #0a506e --]], -- Fundo escuro (azul profundo)
+		base00 = bg_colors[13]--[[ #0a506e --]], -- Fundo escuro (azul profundo) 13
 		base01 = "#585f62", -- Cinza mais escuro para contraste sutil
 		base02 = "#653b27", -- Marrom escuro para elementos menos destacados
 		-- base03 = "#cc8f62", -- Comentários (marrom claro)
