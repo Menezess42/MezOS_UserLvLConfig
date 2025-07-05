@@ -5,7 +5,7 @@ vim.o.termguicolors = true
 vim.opt.cursorline = true
 
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '»', trail = '·', nbsp = '␣' }
 vim.o.smarttab=true
 vim.opt.cpoptions:append('I')
 vim.o.expandtab = true
