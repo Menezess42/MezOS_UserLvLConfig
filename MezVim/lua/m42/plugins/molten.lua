@@ -26,7 +26,7 @@ return {
     end,
   },
   {
-    "3rd/image-nvim", -- Este pode continuar aqui se desejar, apenas para configurar
+    "3rd/image.nvim", -- Este pode continuar aqui se desejar, apenas para configurar
     config = function()
       require("image").setup({
         backend = "kitty",
