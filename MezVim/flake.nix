@@ -143,17 +143,17 @@
                         indent-blankline-nvim
                         vim-startuptime
                 ];
+                molten = with pkgs.vimPlugins; [
+                    molten-nvim
+                        image-nvim
+                ];
             };
-            molten = with pkgs.vimPlugins; [
-            molten-nvim
-            image-nvim
-            ];
         };
         sharedLibraries = {
             general = with pkgs; [
             ];
             molten = with pkgs; [
-            imagemagick
+                imagemagick
             ];
         };
         environmentVariables = {
@@ -161,7 +161,7 @@
                 CATTESTVAR = "It worked!";
             };
             molten = {
-            MOLTED_BACKEND = "kitty";
+                MOLTED_BACKEND = "kitty";
             };
         };
         extraWrapperArgs = {
@@ -172,12 +172,12 @@
         extraPython3Packages = {
             test = (_:[]);
             molten = ps: with ps; [
-            pynvim
-            jupyter-client
-            cairosvg
-            pnglatex
-            plotly
-            pyperclip
+                pynvim
+                    jupyter-client
+                    cairosvg
+                    pnglatex
+                    plotly
+                    pyperclip
             ];
         };
         extraLuaPackages = {
