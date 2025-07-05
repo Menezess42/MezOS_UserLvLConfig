@@ -24,22 +24,22 @@ return {
       vim.keymap.set("n", "<leader>md", ":MoltenDelete<CR>", { desc = "[M]olten [D]elete cell", silent = true })
       vim.keymap.set("n", "<leader>mo", ":MoltenEnterOutput<CR>", { desc = "[M]olten [O]utput", silent = true })
     end,
-  },
-  {
-    "3rd/image.nvim", -- Este pode continuar aqui se desejar, apenas para configurar
-    config = function()
-      require("image").setup({
-        backend = "kitty",
-        integrations = {
-          markdown = true,
-          neorg = true,
-        },
-        max_width = 100,
-        max_height = 12,
-        max_height_window_percentage = math.huge,
-        window_overlap_clear_enabled = true,
-        window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
-      })
-    end,
-  },
+  }
+  -- {
+  --   "3rd/image.nvim", -- Este pode continuar aqui se desejar, apenas para configurar
+  --   config = function()
+  --     require("image").setup({
+  --       backend = "kitty",
+  --       integrations = {
+  --         markdown = true,
+  --         neorg = true,
+  --       },
+  --       max_width = 100,
+  --       max_height = 12,
+  --       max_height_window_percentage = math.huge,
+  --       window_overlap_clear_enabled = true,
+  --       window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
+  --     })
+  --   end,
+  -- },
 }
