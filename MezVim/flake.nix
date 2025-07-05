@@ -160,6 +160,9 @@
             test = {
                 CATTESTVAR = "It worked!";
             };
+            molten = {
+            MOLTED_BACKEND = "kitty";
+            };
         };
         extraWrapperArgs = {
             test = [
