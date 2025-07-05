@@ -1,47 +1,29 @@
--- vim.o.foldcolumn = '1'
--- vim.o.foldlevel = 99
--- vim.o.foldenable = true
---
--- vim.keymap.set('n', 'zR', require('ufo').openAllFolds, {desc = "Open all folds"})
--- vim.keymap.set('n', 'zM', require('ufo').closeAllFolds, {desc = "Close all folds"})
--- vim.keymap.set('n', 'zK', function()
---     if not winid then
---         vim.lsp.bufg.hover()
---     end
--- end, {desc = "Peek Fold"})
---
--- require('ufo').setup({
---     provider_selector = function(bufnr, filetype, buftype)
---         return {'lsp', 'ident'}
---     end
--- })
-
 return {
   {
     "kevinhwang91/nvim-ufo",
-    requires = "kevinhwang91/promise-async",  -- Dependência para funcionamento assíncrono
+    requires = "kevinhwang91/promise-async",  -- dependência para funcionamento assíncrono
     for_cat = 'general.extra',
-    event = "DeferredUIEnter",  -- Carrega após a IU ser inicializada
+    event = "deferreduienter",  -- carrega após a iu ser inicializada
     after = function(plugin)
-      -- Configurações de dobra
+      -- configurações de dobra
       vim.o.foldcolumn = '1'
       vim.o.foldlevel = 99
       vim.o.foldenable = true
 
-      -- Mapeamentos de teclas para manipulação de dobras
-      vim.keymap.set('n', 'zR', require('ufo').openAllFolds, { desc = "Abrir todas as dobras" })
-      vim.keymap.set('n', 'zM', require('ufo').closeAllFolds, { desc = "Fechar todas as dobras" })
-      vim.keymap.set('n', 'zK', function()
-        -- Se não houver janela de visualização, utiliza o hover do LSP
+      -- mapeamentos de teclas para manipulação de dobras
+      vim.keymap.set('n', 'zr', require('ufo').openallfolds, { desc = "abrir todas as dobras" })
+      vim.keymap.set('n', 'zm', require('ufo').closeallfolds, { desc = "fechar todas as dobras" })
+      vim.keymap.set('n', 'zk', function()
+        -- se não houver janela de visualização, utiliza o hover do lsp
         if vim.fn.win_getid() == 0 then
           vim.lsp.buf.hover()
         end
-      end, { desc = "Visualizar dobra" })
+      end, { desc = "visualizar dobra" })
 
-      -- Inicialização do ufo
+      -- inicialização do ufo
       require('ufo').setup({
         provider_selector = function(bufnr, filetype, buftype)
-          -- Prioriza LSP e indentação como provedores de dobra
+          -- prioriza lsp e indentação como provedores de dobra
           return { 'lsp', 'indent' }
         end,
       })

@@ -5,7 +5,7 @@ vim.o.termguicolors = true
 vim.opt.cursorline = true
 
 vim.opt.list = true
-vim.opt.listchars = { tab = '»', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.o.smarttab=true
 vim.opt.cpoptions:append('I')
 vim.o.expandtab = true
@@ -38,7 +38,7 @@ vim.o.mouse='a'
 vim.api.nvim_create_autocmd("FileType", {
 	desc = "remove formatoptions",
 	callback = function ()
-	vim.opt.formatoptions:remove({"c","r","o"})
+		vim.opt.formatoptions:remove({"c","r","o"})
 	end
 })
 
