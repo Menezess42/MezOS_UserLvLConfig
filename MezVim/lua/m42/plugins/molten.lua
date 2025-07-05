@@ -31,7 +31,7 @@ return {
     end,
   },
   {
-    "3rd/image.nvim",
+    "3rd/image-nvim",
     config = function()
       require("image").setup({
         backend = "kitty", -- Seu terminal é o Kitty
