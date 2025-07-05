@@ -1,4 +1,5 @@
 return {
+    {
     "benlubas/molten-nvim",
     requires = "3d/image-nvim",  -- Dependência para funcionamento assíncrono
     for_cat = 'general.extra',
