@@ -63,6 +63,8 @@
                         vim-tmux-navigator
                         nvim-ufo
                         markdown-preview-nvim
+                        molten-nvim
+                        image-nvim
 #lsp_lines-nvim
                 ];
                 extra = [
