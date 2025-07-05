@@ -2,7 +2,7 @@ return {
   {
     "benlubas/molten-nvim",
     name = "molten",
-    for_cat = "general.extras",
+    for_cat = "molten",
     ft = { "python", "ipynb", "markdown" },
     build = ":UpdateRemotePlugins",
     after = function(plugin)
