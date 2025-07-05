@@ -142,12 +142,18 @@
                         undotree
                         indent-blankline-nvim
                         vim-startuptime
+                        molten-nvim
+                        image-nvim
                 ];
                 molten = with pkgs.vimPlugins; [
                     molten-nvim
                         image-nvim
                 ];
             };
+            molten = with pkgs.vimPlugins; [
+                molten-nvim
+                    image-nvim
+            ];
         };
         sharedLibraries = {
             general = with pkgs; [
