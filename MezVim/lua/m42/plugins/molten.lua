@@ -2,10 +2,10 @@ return {
   {
     "benlubas/molten-nvim",
     name = "molten",
-    for_cat = "dev.python",
+    for_cat = "molten",
     ft = { "python", "ipynb", "markdown" },
     build = ":UpdateRemotePlugins",
-    config = function()
+    after = function(plugin)
       vim.g.molten_image_provider = "image.nvim"
       vim.g.molten_output_win_max_height = 20
       vim.g.molten_auto_open_output = false
