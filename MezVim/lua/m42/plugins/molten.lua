@@ -1,45 +1,32 @@
 return {
-  {
     "benlubas/molten-nvim",
-    name = "molten",
-    for_cat = "molten",
-    ft = { "python", "ipynb", "markdown" },
-    build = ":UpdateRemotePlugins",
+    requires = "3d/image-nvim",  -- Dependência para funcionamento assíncrono
+    for_cat = 'general.extra',
+    event = "DeferredUIEnter",  -- Carrega após a IU ser inicializada
     after = function(plugin)
-      vim.g.molten_image_provider = "image.nvim"
-      vim.g.molten_output_win_max_height = 20
-      vim.g.molten_auto_open_output = false
-
-      vim.api.nvim_create_autocmd("BufReadPost", {
-        pattern = "*.ipynb",
-        callback = function()
-          vim.cmd("MoltenInit")
-        end,
-      })
-
-      vim.keymap.set("n", "<leader>mi", ":MoltenInit<CR>", { desc = "[M]olten [I]nit" })
-      vim.keymap.set("n", "<leader>me", ":MoltenEvaluateOperator<CR>", { desc = "[M]olten [E]val op", silent = true })
-      vim.keymap.set("n", "<leader>ml", ":MoltenEvaluateLine<CR>", { desc = "[M]olten eval [L]ine", silent = true })
-      vim.keymap.set("v", "<leader>mv", ":<C-u>MoltenEvaluateVisual<CR>", { desc = "[M]olten [V]isual", silent = true })
-      vim.keymap.set("n", "<leader>md", ":MoltenDelete<CR>", { desc = "[M]olten [D]elete cell", silent = true })
-      vim.keymap.set("n", "<leader>mo", ":MoltenEnterOutput<CR>", { desc = "[M]olten [O]utput", silent = true })
+      -- -- Configurações de dobra
+      -- vim.o.foldcolumn = '1'
+      -- vim.o.foldlevel = 99
+      -- vim.o.foldenable = true
+      --
+      -- -- Mapeamentos de teclas para manipulação de dobras
+      -- vim.keymap.set('n', 'zR', require('ufo').openAllFolds, { desc = "Abrir todas as dobras" })
+      -- vim.keymap.set('n', 'zM', require('ufo').closeAllFolds, { desc = "Fechar todas as dobras" })
+      -- vim.keymap.set('n', 'zK', function()
+      --   -- Se não houver janela de visualização, utiliza o hover do LSP
+      --   if vim.fn.win_getid() == 0 then
+      --     vim.lsp.buf.hover()
+      --   end
+      -- end, { desc = "Visualizar dobra" })
+      --
+      -- -- Inicialização do ufo
+      -- require('ufo').setup({
+      --   provider_selector = function(bufnr, filetype, buftype)
+      --     -- Prioriza LSP e indentação como provedores de dobra
+      --     return { 'lsp', 'indent' }
+      --   end,
+      -- })
+      print("test Molten")
     end,
-  }
-  -- {
-  --   "3rd/image.nvim", -- Este pode continuar aqui se desejar, apenas para configurar
-  --   config = function()
-  --     require("image").setup({
-  --       backend = "kitty",
-  --       integrations = {
-  --         markdown = true,
-  --         neorg = true,
-  --       },
-  --       max_width = 100,
-  --       max_height = 12,
-  --       max_height_window_percentage = math.huge,
-  --       window_overlap_clear_enabled = true,
-  --       window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
-  --     })
-  --   end,
-  -- },
+  },
 }
