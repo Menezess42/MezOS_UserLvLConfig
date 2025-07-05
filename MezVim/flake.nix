@@ -150,10 +150,12 @@
                         image-nvim
                 ];
             };
-            molten = with pkgs.vimPlugins; [
-                molten-nvim
-                    image-nvim
-            ];
+            molten = with pkgs.vimPlugins; {
+                default = [
+                    molten-nvim
+                        image-nvim
+                ];
+            };
         };
         sharedLibraries = {
             general = with pkgs; [
