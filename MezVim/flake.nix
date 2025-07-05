@@ -63,8 +63,6 @@
                         vim-tmux-navigator
                         nvim-ufo
                         markdown-preview-nvim
-                        molten-nvim
-                        image-nvim
 #lsp_lines-nvim
                 ];
                 extra = [
@@ -144,34 +142,16 @@
                         undotree
                         indent-blankline-nvim
                         vim-startuptime
-                        molten-nvim
-                        image-nvim
-                ];
-                molten = with pkgs.vimPlugins; [
-                    molten-nvim
-                        image-nvim
-                ];
-            };
-            molten = with pkgs.vimPlugins; {
-                default = [
-                    molten-nvim
-                        image-nvim
                 ];
             };
         };
         sharedLibraries = {
             general = with pkgs; [
             ];
-            molten = with pkgs; [
-                imagemagick
-            ];
         };
         environmentVariables = {
             test = {
                 CATTESTVAR = "It worked!";
-            };
-            molten = {
-                MOLTED_BACKEND = "kitty";
             };
         };
         extraWrapperArgs = {
@@ -181,14 +161,6 @@
         };
         extraPython3Packages = {
             test = (_:[]);
-            molten = ps: with ps; [
-                pynvim
-                    jupyter-client
-                    cairosvg
-                    pnglatex
-                    plotly
-                    pyperclip
-            ];
         };
         extraLuaPackages = {
             test = [ (_:[]) ];
@@ -210,7 +182,6 @@
                     subtest1 = true;
                 };
                 lspDebugMode=false;
-                molten = true;
             };
             extra = {
                 nixdExtras = {
