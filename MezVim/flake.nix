@@ -68,14 +68,14 @@
                         rainbow-delimiters-nvim
                         vim-tmux-navigator
                         nvim-ufo
-                        image-nvim
-                        molten-nvim
                         markdown-preview-nvim
 #lsp_lines-nvim
                 ];
                 extra = [
                     oil-nvim
                         nvim-web-devicons
+                        molten-nvim
+                        image-nvim
                 ];
             };
         };
@@ -151,17 +151,17 @@
                         indent-blankline-nvim
                         vim-startuptime
                 ];
-                # molten = with pkgs.vimPlugins; [
-                # image-nvim
-                # molten-nvim
-                # ];
+                molten = with pkgs.vimPlugins; [
+                    image-nvim
+                        molten-nvim
+                ];
             };
         };
         sharedLibraries = {
             general = with pkgs; [
             ];
             moltenDeps = with pkgs; [
-            imagemagick
+                imagemagick
             ];
         };
         environmentVariables = {
@@ -176,17 +176,17 @@
         };
         extraPython3Packages = {
             test = (_:[]);
-            # moltenDeps = ps: with ps; [
-            # pynvim
-            # jupyter-client
-            # cairosvg
-            # pnglatex
-            # plotly
-            # pyperclip
-            # ];
+# moltenDeps = ps: with ps; [
+# pynvim
+# jupyter-client
+# cairosvg
+# pnglatex
+# plotly
+# pyperclip
+# ];
         };
         extraLuaPackages = {
-            # test = [ (_:[]) ];
+# test = [ (_:[]) ];
             general = ps: [ps.magick];
         };
     };
