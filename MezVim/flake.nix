@@ -69,13 +69,13 @@
                         vim-tmux-navigator
                         nvim-ufo
                         markdown-preview-nvim
+                        molten-nvim
+                        image-nvim
 #lsp_lines-nvim
                 ];
                 extra = [
                     oil-nvim
                         nvim-web-devicons
-                        molten-nvim
-                        image-nvim
                 ];
             };
         };
