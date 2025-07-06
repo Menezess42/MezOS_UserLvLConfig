@@ -12,7 +12,7 @@ return {
     cmd = { "MoltenStart", "MoltenStop" },  -- comandos do plugin
     event = "BufReadPost",  -- carregamento pós leitura de buffer
     after = function(plugin)
-      require('molten').setup({
+      require('molten-nvim').setup({
         -- Configurações opcionais, consulte a documentação para mais opções
         image = {
           backend = "imagemagick",  -- usa imagemagick instalado via Nix
