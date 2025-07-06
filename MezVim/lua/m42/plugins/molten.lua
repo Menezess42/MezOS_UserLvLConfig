@@ -12,7 +12,7 @@ return {
     cmd = { "MoltenStart", "MoltenStop" },  -- comandos do plugin
     -- event = "BufReadPost",  -- carregamento pós leitura de buffer
     event = "DeferredUIEnter",
-    after = function(plugin)
+    config = function()
       require('molten').setup({
         -- Configurações opcionais, consulte a documentação para mais opções
         image = {
