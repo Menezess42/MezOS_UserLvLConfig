@@ -68,6 +68,8 @@
                         rainbow-delimiters-nvim
                         vim-tmux-navigator
                         nvim-ufo
+                        image-nvim
+                        molten-nvim
                         markdown-preview-nvim
 #lsp_lines-nvim
                 ];
