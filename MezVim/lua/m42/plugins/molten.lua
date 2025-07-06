@@ -7,23 +7,8 @@ return {
       "samodostal/image.nvim",  -- plugin de renderização de imagens
       "nvim-lua/plenary.nvim"  -- utilitários Lua para Neovim
     },
-    for_cat = 'general.molten',  -- categoria definida no flake
     ft = { "markdown", "jupyter" },  -- carrega em arquivos Markdown e Jupyter
     cmd = { "MoltenStart", "MoltenStop" },  -- comandos do plugin
-    -- event = "BufReadPost",  -- carregamento pós leitura de buffer
-    event = "DeferredUIEnter",
-    after = function(plugin)
-      require('molten-nvim').setup({
-        -- Configurações opcionais, consulte a documentação para mais opções
-        image = {
-          backend = "imagemagick",  -- usa imagemagick instalado via Nix
-        },
-        -- pinte as células de Jupyter como imagens
-        display = {
-          syntax = true,
-          prompt = false,
-        },
-      })
-    end,
+    event = "BufReadPost",  -- carregamento pós leitura de buffer
   },
 }
