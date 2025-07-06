@@ -27,7 +27,7 @@ return {
     -- event = "BufReadPost",  -- carregamento pós leitura de buffer
     event = "DeferredUIEnter",
     after = function(plugin)
-      require('molten').setup({
+      require('molten-nvim').setup({
         -- Configurações opcionais, consulte a documentação para mais opções
         image = {
           backend = "imagemagick",  -- usa imagemagick instalado via Nix
