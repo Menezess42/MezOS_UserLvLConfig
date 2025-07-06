@@ -37,6 +37,6 @@ require('lze').load{
             { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
         },
     },
-    {import = "m42.plugins.ufo"},
-    { import = "m42.plugins.molten"},
+    {import = "m42.plugins.ufo",},
+    { import = "m42.plugins.molten",},
 }
