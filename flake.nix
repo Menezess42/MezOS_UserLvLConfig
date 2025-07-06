@@ -7,7 +7,7 @@
 		# MezVim.url = "./MezVim/";
 	};
 
-	outputs = { nixpkgs, home-manager, stylix, MezVim,  ... }@inputs: {
+	outputs = { nixpkgs, home-manager, stylix, ... }@inputs: {
 		homeConfigurations."menezess42" = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.x86_64-linux;
 			modules = [
