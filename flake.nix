@@ -12,8 +12,8 @@
 			pkgs = nixpkgs.legacyPackages.x86_64-linux;
 			modules = [
 				stylix.homeManagerModules.stylix
-					MezVim.homeModule
-					# ./home.nix
+					# MezVim.homeModule
+					./home.nix
 			];
 		};
 	};
