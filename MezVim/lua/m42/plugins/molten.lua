@@ -7,11 +7,11 @@ return {
       "samodostal/image.nvim",  -- plugin de renderização de imagens
       "nvim-lua/plenary.nvim"  -- utilitários Lua para Neovim
     },
-    for_cat = 'general.molten',  -- categoria definida no flake
+    for_cat = 'general.extra',  -- categoria definida no flake
     ft = { "markdown", "jupyter" },  -- carrega em arquivos Markdown e Jupyter
     cmd = { "MoltenStart", "MoltenStop" },  -- comandos do plugin
     event = "BufReadPost",  -- carregamento pós leitura de buffer
-    config = function()
+    after = function(plugin)
       require('molten').setup({
         -- Configurações opcionais, consulte a documentação para mais opções
         image = {
