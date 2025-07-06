@@ -7,12 +7,12 @@
       },
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-1RhdjgFx4VzMxpJ8fS/2J1j77GnlOKwjvb6145YX4AM=",
-        "path": "/nix/store/hawkz8xaylfqzqfig8mbh2alz1ihkz94-source/MezVim",
+        "narHash": "sha256-bHHrg1yHFPu2GOQZF7/CMAbmfIA6JF+9AxYiqaaOrMI=",
+        "path": "/nix/store/rg8bqcj2119lwkni7k00r9cj6d40ssg1-source/MezVim",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/hawkz8xaylfqzqfig8mbh2alz1ihkz94-source/MezVim",
+        "path": "/nix/store/rg8bqcj2119lwkni7k00r9cj6d40ssg1-source/MezVim",
         "type": "path"
       }
     },

@@ -151,10 +151,10 @@
                         indent-blankline-nvim
                         vim-startuptime
                 ];
-                molten = with pkgs.vimPlugins; [
-                image-nvim
-                molten-nvim
-                ];
+                # molten = with pkgs.vimPlugins; [
+                # image-nvim
+                # molten-nvim
+                # ];
             };
         };
         sharedLibraries = {
