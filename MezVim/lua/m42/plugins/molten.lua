@@ -5,7 +5,7 @@ return {
       "samodostal/image.nvim",
       "nvim-lua/plenary.nvim"
     },
-    for_cat = "general.molten",
+    -- for_cat = "general.molten",
     ft = { "markdown", "jupyter" },
     cmd = { "MoltenInit", "MoltenEvaluateOperator", "MoltenEvaluateVisual", "MoltenEvaluateLine" },
     event = "DeferredUIEnter",

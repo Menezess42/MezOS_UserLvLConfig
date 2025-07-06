@@ -69,6 +69,8 @@
                         vim-tmux-navigator
                         nvim-ufo
                         markdown-preview-nvim
+                        image-nvim
+                        molten-nvim
 #lsp_lines-nvim
                 ];
                 extra = [
@@ -149,10 +151,10 @@
                         indent-blankline-nvim
                         vim-startuptime
                 ];
-                molten = with pkgs.vimPlugins; [
-                    image-nvim
-                        molten-nvim
-                ];
+# molten = with pkgs.vimPlugins; [
+#     image-nvim
+#         molten-nvim
+# ];
             };
         };
         sharedLibraries = {
