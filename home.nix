@@ -83,8 +83,8 @@
     };
     autoEnable = true;
   };
-  MezVim = {
-  enable = true;
-  packageNames = ["MezVim"];
-  };
+  # MezVim = {
+  # enable = true;
+  # packageNames = ["MezVim"];
+  # };
 }
