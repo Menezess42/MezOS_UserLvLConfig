@@ -7,15 +7,21 @@
     };
 
     outputs = { self, nixpkgs, nixCats, ... }@inputs: let
+
         inherit (nixCats) utils;
+
     luaPath = "${./.}";
+
     forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
+
     extra_pkg_config = {
         allowUnfree = true;
     };
+
     dependencyOverlays = /* (import ./overlays inputs) ++ */ [
         (utils.standardPluginOverlay inputs)
     ];
+
     categoryDefinitions = { pkgs, settings, categories, extra, name, mkNvimPlugin, ... }@packageDef: {
         lspsAndRuntimeDeps = {
 # some categories of stuff.
@@ -143,10 +149,17 @@
                         indent-blankline-nvim
                         vim-startuptime
                 ];
+                molten = with pkgs.vimPlugins; [
+                image-nvim
+                molten-nvim
+                ];
             };
         };
         sharedLibraries = {
             general = with pkgs; [
+            ];
+            moltenDeps = with pkgs; [
+            imagemagick
             ];
         };
         environmentVariables = {
@@ -161,9 +174,18 @@
         };
         extraPython3Packages = {
             test = (_:[]);
+            # moltenDeps = ps: with ps; [
+            # pynvim
+            # jupyter-client
+            # cairosvg
+            # pnglatex
+            # plotly
+            # pyperclip
+            # ];
         };
         extraLuaPackages = {
-            test = [ (_:[]) ];
+            # test = [ (_:[]) ];
+            general = ps: [ps.magick];
         };
     };
     packageDefinitions = {
@@ -182,6 +204,7 @@
                     subtest1 = true;
                 };
                 lspDebugMode=false;
+                moltenDeps = true;
             };
             extra = {
                 nixdExtras = {
