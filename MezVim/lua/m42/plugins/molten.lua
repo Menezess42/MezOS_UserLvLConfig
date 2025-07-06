@@ -11,8 +11,8 @@ return {
     ft = { "markdown", "jupyter" },  -- carrega em arquivos Markdown e Jupyter
     cmd = { "MoltenStart", "MoltenStop" },  -- comandos do plugin
     event = "BufReadPost",  -- carregamento pós leitura de buffer
-    after = function(plugin)
-      require('molten-nvim').setup({
+    config = function()
+      require('molten').setup({
         -- Configurações opcionais, consulte a documentação para mais opções
         image = {
           backend = "imagemagick",  -- usa imagemagick instalado via Nix
