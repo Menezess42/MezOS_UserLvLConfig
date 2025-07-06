@@ -7,7 +7,7 @@ return {
     for_cat = "general.molten",
     ft = { "python", "ipynb", "markdown" },
     build = ":UpdateRemotePlugins",
-    after = function()
+    after = function(plugins)
       require("molten").setup({})
     end,
   }
