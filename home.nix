@@ -55,6 +55,7 @@
   # pandoc
   pandoc
   python311Packages.pandocfilters # (opcional, explicado abaixo)
+  vscode
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
