@@ -28,6 +28,7 @@
                 "bh" = "home-manager switch --show-trace";
                 "bn" = "sudo nixos-rebuild switch";
                 "ngc" = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
+                "mvimconf" = "~/.config/home-manager/MezVim"
 			};
 			zplug={
 				enable = true;
