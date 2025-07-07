@@ -8,8 +8,7 @@
     ./modules/zsh.nix
     ./modules/tmux.nix
   ];
-  zsh.enable=true;
-  tmux.enable=true;
+  zsh.enable=true; tmux.enable=true;
   home.packages = with pkgs; [
   # neovim
   xclip
@@ -83,8 +82,4 @@
     };
     autoEnable = true;
   };
-  # MezVim = {
-  # enable = true;
-  # packageNames = ["MezVim"];
-  # };
 }
