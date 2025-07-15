@@ -58,7 +58,7 @@
             vscode
 # OBStudio
             xdg-desktop-portal-wlr
-            xdg-desktop-portal-hyprland
+            # xdg-desktop-portal-hyprland
             xdg-desktop-portal-gtk
             ];
 # Let Home Manager install and manage itself.
