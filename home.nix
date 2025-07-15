@@ -92,13 +92,20 @@
               cudaSupport = true;
               }
               );
-      plugins = with pkgs.obs-studio-plugins; [
-          wlrobs
-              obs-backgroundremoval
-              obs-pipewire-audio-capture
-              obs-vaapi #optional AMD hardware acceleration
-              obs-gstreamer
-              obs-vkcapture
+      # plugins = with pkgs.obs-studio-plugins; [
+      #     wlrobs
+      #         obs-backgroundremoval
+      #         obs-pipewire-audio-capture
+      #         obs-vaapi #optional AMD hardware acceleration
+      #         obs-gstreamer
+      #         obs-vkcapture
+      # ];
+      plugins = with pkgs; [
+          obs-studio-plugins.wlrobs
+              obs-studio-plugins.obs-backgroundremoval
+              obs-studio-plugins.obs-pipewire-audio-capture
+              obs-studio-plugins.obs-gstreamer
+              obs-studio-plugins.obs-vkcapture
       ];
   };
 
