@@ -56,6 +56,10 @@
   pandoc
   python311Packages.pandocfilters # (opcional, explicado abaixo)
   vscode
+  # OBStudio
+  xdg-desktop-portal-wlr
+  xdg-desktop-portal-hyprland
+  xdg-desktop-portal-gtk
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
@@ -92,23 +96,13 @@
               cudaSupport = true;
               }
               );
-      # plugins = with pkgs.obs-studio-plugins; [
-      #     wlrobs
-      #         obs-backgroundremoval
-      #         obs-pipewire-audio-capture
-      #         obs-vaapi #optional AMD hardware acceleration
-      #         obs-gstreamer
-      #         obs-vkcapture
-      # ];
-      plugins = with pkgs; [
-          obs-studio-plugins.wlrobs
-              obs-studio-plugins.obs-backgroundremoval
-              obs-studio-plugins.obs-pipewire-audio-capture
-              obs-studio-plugins.obs-gstreamer
-              obs-studio-plugins.obs-vkcapture
-              xdg-desktop-portal-wlr
-              xdg-desktop-portal-hyprland
-              xdg-desktop-portal-gtk
+      plugins = with pkgs.obs-studio-plugins; [
+          wlrobs
+              obs-backgroundremoval
+              obs-pipewire-audio-capture
+              obs-gstreamer
+              obs-vkcapture
+            obs-studio-plugins.wlrobs
       ];
   };
 
