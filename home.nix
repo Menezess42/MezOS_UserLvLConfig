@@ -106,6 +106,9 @@
               obs-studio-plugins.obs-pipewire-audio-capture
               obs-studio-plugins.obs-gstreamer
               obs-studio-plugins.obs-vkcapture
+              xdg-desktop-portal-wlr
+              xdg-desktop-portal-hyprland
+              xdg-desktop-portal-gtk
       ];
   };
 
