@@ -40,7 +40,7 @@
             ripgrep
             networkmanagerapplet
             grimblast
-# obsidian
+            obsidian
             qalculate-gtk
             git
             thefuck
