@@ -63,7 +63,6 @@
             ];
 # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
-    programs.nix-ld.enable = true;
     stylix ={
         enable=true;
         image = ./wall.png;
