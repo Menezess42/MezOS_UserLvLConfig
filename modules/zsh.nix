@@ -29,7 +29,7 @@
                 "bn" = "sudo nixos-rebuild switch";
                 "ngc" = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
                 "mvimconf" = "~/.config/home-manager/MezVim";
-                "electron" = "/nix/store/mb6bpapdxnryb4hhz35d492c1zkxcbmr-electron-unwrapped-37.4.0/libexec/electron/electron";
+                "MyElectron" = "/nix/store/mb6bpapdxnryb4hhz35d492c1zkxcbmr-electron-unwrapped-37.4.0/libexec/electron/electron";
 			};
 			zplug={
 				enable = true;
