@@ -61,11 +61,16 @@
             # xdg-desktop-portal-hyprland
             xdg-desktop-portal-gtk
             ];
+            xdg.portal = {
+            enable = true;
+            extraPortals = with pkgs; [xdg-desktop-portal-gtk];
+            };
 # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
     stylix ={
         enable=true;
         image = ./wall.png;
+        polarity = "dark";
 #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
         override = {
             base00 = "22303c";  # Fundo acinzentado azulado, confortável
