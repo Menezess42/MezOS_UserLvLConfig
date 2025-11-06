@@ -44,6 +44,7 @@
             qalculate-gtk
             thefuck
             unzip
+            git
 # Emacs Vterm
             cmake
             gnumake
