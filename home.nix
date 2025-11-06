@@ -42,7 +42,6 @@
             grimblast
             obsidian
             qalculate-gtk
-            git
             thefuck
             unzip
 # Emacs Vterm
